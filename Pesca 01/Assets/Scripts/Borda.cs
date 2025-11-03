@@ -22,6 +22,11 @@ public class Borda : MonoBehaviour
             highlight = null;
         }
 
+        if (Camera.main == null)
+        {
+            return;
+        }
+
         // 2. Cria um raio na posição do mouse
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
@@ -30,8 +35,8 @@ public class Borda : MonoBehaviour
         {
             highlight = raycastHit.transform;
 
-            // 3. Verifica se o objeto tem a tag "Selectable"
-            if (highlight.CompareTag("Selectable"))
+            // 3. Verifica se o objeto tem a tag "Outlined"
+            if (highlight.CompareTag("Outlined"))
             {
                 Outline outlineComponent = highlight.gameObject.GetComponent<Outline>();
 
