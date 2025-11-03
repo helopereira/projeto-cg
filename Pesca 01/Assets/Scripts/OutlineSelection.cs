@@ -17,6 +17,19 @@ public class OutlineSelection : MonoBehaviour
     void Update()
     {
         // -------------------------
+        // CORREÇÃO DE ERRO DE FRUSTUM: Checagem de sanidade
+        // Garante que a câmera exista e que a posição do mouse seja válida no início.
+        // -------------------------
+        if (Camera.main == null) { return; }
+        
+        // Se a posição do mouse tiver valores inválidos (como infinito), ignora o frame.
+        Vector3 mousePosition = Input.mousePosition;
+        if (float.IsInfinity(mousePosition.x) || float.IsInfinity(mousePosition.y))
+        {
+            return;
+        }
+        
+        // -------------------------
         // 1. HIGHLIGHT (Passar o mouse)
         // -------------------------
 
@@ -32,11 +45,6 @@ public class OutlineSelection : MonoBehaviour
             highlight = null;
         }
         
-        if (Camera.main == null)
-        {
-            return;
-        }
-
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         
         // Verifica se o ponteiro não está sobre a UI e se acertou um objeto

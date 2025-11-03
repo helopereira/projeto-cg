@@ -10,6 +10,19 @@ public class Borda : MonoBehaviour
 
     void Update()
     {
+        // -------------------------
+        // CORREÇÃO DE ERRO DE FRUSTUM: Checagem de sanidade
+        // Garante que a câmera exista e que a posição do mouse seja válida no início.
+        // -------------------------
+        if (Camera.main == null) { return; }
+        
+        // Se a posição do mouse tiver valores inválidos (como infinito), ignora o frame.
+        Vector3 mousePosition = Input.mousePosition;
+        if (float.IsInfinity(mousePosition.x) || float.IsInfinity(mousePosition.y))
+        {
+            return;
+        }
+        
         // 1. Desliga o contorno (Outline) do objeto anteriormente destacado (hover out)
         if (highlight != null)
         {
@@ -20,11 +33,6 @@ public class Borda : MonoBehaviour
                 outlineComponent.enabled = false;
             }
             highlight = null;
-        }
-
-        if (Camera.main == null)
-        {
-            return;
         }
 
         // 2. Cria um raio na posição do mouse
