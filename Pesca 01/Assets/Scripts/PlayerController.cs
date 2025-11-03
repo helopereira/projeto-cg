@@ -8,8 +8,11 @@ public class PlayerController : MonoBehaviour
     Vector3 strafe;
     Vector3 vertical;
 
-    float forwardSpeed = 5f;
-    float strafeSpeed = 5f;
+    [Header("Configurações de Velocidade e Pulo")]
+    [Tooltip("Velocidade de movimento para frente e para trás.")]
+    public float forwardSpeed = 8f; // AUMENTADO (exemplo)
+    [Tooltip("Velocidade de movimento lateral (strafe).")]
+    public float strafeSpeed = 8f;   // AUMENTADO (exemplo)
 
     float gravity; 
     float verticalSpeed = 0;
