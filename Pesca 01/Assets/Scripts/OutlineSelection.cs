@@ -91,7 +91,7 @@ public class OutlineSelection : MonoBehaviour
         // -------------------------
         // 3. DESSELEÇÃO (Pressionar a Barra de Espaço)
         // -------------------------
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             if (selection != null)
             {

@@ -36,7 +36,7 @@ public class GardenManager : MonoBehaviour
         if (allComplete && !faseCompleta)
         {
             faseCompleta = true;
-            Debug.Log("🎉 FASE COMPLETA! Todas as terras atingiram o Estado 3.");
+            Debug.Log("🎉 FASE COMPLETA!");
             // Aqui você pode adicionar lógica de transição de cena, HUD, etc.
         }
     }
