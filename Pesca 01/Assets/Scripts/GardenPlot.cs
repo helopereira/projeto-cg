@@ -1,4 +1,5 @@
 using UnityEngine;
+using System; // Necessário para a Action
 
 public class GardenPlot : MonoBehaviour
 {
@@ -11,135 +12,146 @@ public class GardenPlot : MonoBehaviour
     [Tooltip("Objeto das Flores que será ligado/desligado.")]
     public GameObject floresObjeto;
 
-    [Header("Materiais/Texturas para os Estados")]
-    [Tooltip("Material para o Estado 1 (Inicial).")]
+    [Header("Materiais para os Estados")]
     public Material materialEstado1;
-    [Tooltip("Material para o Estado 2.")]
     public Material materialEstado2;
-    [Tooltip("Material para o Estado 3.")]
     public Material materialEstado3;
-    [Tooltip("Material para o Estado 4 (Final).")]
-    public Material materialEstado4;
+    public Material materialEstado4; // NOVO: Material para o Estado 4
+    public Material materialEstado5; // NOVO: Material para o Estado 5 (Final)
 
-    [Header("Ferramentas Necessárias")]
-    [Tooltip("Nome da ferramenta necessária para ir do Estado 1 -> 2.")]
-    public string ferramentaParaEstado2 = "Ferramenta 1";
-    [Tooltip("Nome da ferramenta necessária para ir do Estado 2 -> 3.")]
-    public string ferramentaParaEstado3 = "Ferramenta 2";
-    [Tooltip("Nome da ferramenta necessária para ir do Estado 3 -> 4.")]
-    public string ferramentaParaEstado4 = "Ferramenta 3";
-    [Tooltip("Nome da ferramenta necessária para ir do Estado 4 -> 5.")]
-    public string ferramentaParaEstado5 = "Ferramenta 4";
+    [Header("Ferramentas Necessárias (Nomes dos Objetos)")]
+    [Tooltip("Ferramenta necessária para ir do Estado 1 -> 2 (e.g., Shovel).")]
+    public string ferramentaParaEstado2 = "Shovel";
+    [Tooltip("Ferramenta necessária para ir do Estado 2 -> 3 (e.g., SeedBag).")]
+    public string ferramentaParaEstado3 = "SeedBag";
+    [Tooltip("Ferramenta necessária para ir do Estado 3 -> 4 (e.g., WaterCan).")]
+    public string ferramentaParaEstado4 = "WaterCan";
+    [Tooltip("Ferramenta necessária para ir do Estado 4 -> 5 (e.g., Fertilizer).")]
+    public string ferramentaParaEstado5 = "Fertilizer";
 
-    // Estados do nosso jardim
-    private int estadoAtual = 1;
+    // O estado final do jardim
     private const int ESTADO_MAXIMO = 5;
+    
+    // O estado atual do jardim
+    private int estadoAtual = 1;
 
-    // Referência ao nosso Manager Global para notificar a mudança de estado
+    // Referências aos Singletons
     private GardenManager gardenManager;
 
-    [System.Obsolete]
+    // Propriedade para ser acessada pelo GardenManager para contagem
+    public bool IsPhaseComplete => estadoAtual == ESTADO_MAXIMO;
+
     private void Start()
     {
-        // Obtém a instância do GardenManager
-        gardenManager = FindObjectOfType<GardenManager>();
+        // Garante que os Singletons estejam acessíveis
+        gardenManager = GardenManager.Instance;
         if (gardenManager == null)
         {
-            Debug.LogError("GardenManager não encontrado na cena.");
+            Debug.LogError("GardenManager não encontrado. Verifique se o script está no GameManager e ativo.");
         }
-        // Verifica se o SelectedObject está presente (requerido para a lógica)
-        if (SelectedObject.Instance == null)
-        {
-            Debug.LogError("SelectedObject não encontrado. Certifique-se de que o script está anexado ao Game Manager.");
-        }
-
+        
         AtualizarVisualDoEstado();
-        gardenManager?.RegisterPlot(this);
+        // Não precisamos mais registrar o Plot no Manager, pois ele usa FindObjectsOfType no Start.
     }
 
-    // Método chamado quando o usuário clica neste objeto (requer um Collider no objeto!)
-    // Método chamado quando o usuário clica neste objeto (requer um Collider no objeto!)
-    // Método chamado quando o usuário clica neste objeto (requer um Collider no objeto!)
+    // Método chamado quando o usuário clica neste objeto (requer um Collider!)
     private void OnMouseDown()
     {
         // Se o estado já é o máximo, não faz nada
         if (estadoAtual == ESTADO_MAXIMO)
         {
+            GameProgressManager.Instance?.DisplayMessage("Esta parcela já está completa!");
             Debug.Log("Jardim já completo.");
             return;
         }
 
-        string requiredToolName = "";
-        if (estadoAtual == 1)
-            requiredToolName = ferramentaParaEstado2;
-        else if (estadoAtual == 2)
-            requiredToolName = ferramentaParaEstado3;
-        else if (estadoAtual == 3) // NOVO: Ferramenta para Estado 4
-            requiredToolName = ferramentaParaEstado4;
-        else if (estadoAtual == 4) // NOVO: Ferramenta para Estado 5
-            requiredToolName = ferramentaParaEstado5;
-        
-        // CORREÇÃO: Verifica se a ferramenta está incorreta ou ausente.
-        // Se a verificação falhar, registra o aviso E SAI IMEDIATAMENTE.
-        if (SelectedObject.Instance == null || !SelectedObject.Instance.IsToolSelected(requiredToolName))
+        // 1. Determina qual ferramenta é necessária
+        string requiredToolName = GetRequiredToolName(estadoAtual);
+
+        // 2. Checa se o SelectedObject tem a ferramenta correta
+        if (SelectedObject.Instance != null && SelectedObject.Instance.IsToolSelected(requiredToolName))
         {
-            // Ferramenta incorreta ou nenhuma ferramenta selecionada
-            string currentToolName = SelectedObject.Instance?.SelectedTool?.name ?? "NENHUMA FERRAMENTA";
-            
-            Debug.LogWarning($"Ferramenta Errada. Você precisa da ferramenta '{requiredToolName}'. Ferramenta atual: {currentToolName}.");
-            return; // SAÍDA ANTECIPADA: Impede que o código de avanço de estado seja executado.
+            // Ferramenta correta! Avança o estado.
+            estadoAtual++;
+            AtualizarVisualDoEstado();
         }
-        
-        // Se chegarmos aqui, a ferramenta está CORRETA.
-        // Avança o estado.
-        estadoAtual++;
-        AtualizarVisualDoEstado();
-        
-        // Verifica a conclusão da fase após a mudança para o estado 3
-        if (estadoAtual == ESTADO_MAXIMO)
+        else
         {
-            // Chama CheckPhaseCompletion se o manager foi encontrado
-            gardenManager?.CheckPhaseCompletion();
+            // FERRAMENTA INCORRETA! EXIBE MENSAGEM GLOBALMENTE.
+            string selectedName = SelectedObject.Instance?.SelectedTool != null ? SelectedObject.Instance.SelectedTool.name : "Nenhuma";
+            string errorMessage = $"Ferramenta Errada! Requer: {requiredToolName}. Selecionado: {selectedName}.";
+            
+            GameProgressManager.Instance?.DisplayMessage(errorMessage);
+            Debug.LogWarning(errorMessage);
+            return; // Sai do método se a ferramenta estiver incorreta
+        }
+    }
+
+    /// <summary>
+    /// Retorna o nome da ferramenta necessária para o próximo estado.
+    /// </summary>
+    private string GetRequiredToolName(int current)
+    {
+        // Usamos switch para mapeamento claro de estado para ferramenta
+        switch (current)
+        {
+            case 1: return ferramentaParaEstado2;
+            case 2: return ferramentaParaEstado3;
+            case 3: return ferramentaParaEstado4;
+            case 4: return ferramentaParaEstado5;
+            default: return ""; // Não deve acontecer
         }
     }
 
     // Aplica as configurações visuais com base no estado atual
     private void AtualizarVisualDoEstado()
     {
+        // Garantindo que só aplicamos materiais se o Renderer existir
+        if (terraRenderer == null) return;
+
+        // Se o estado for o final, notifica o GardenManager
+        if (estadoAtual == ESTADO_MAXIMO)
+        {
+            // Notifica o Gerenciador da Fase que esta parcela está completa
+            gardenManager?.RegisterPlotCompletion();
+        }
+        
         switch (estadoAtual)
         {
             case 1:
+                // Estado 1 - Inicial: Grama Alta
                 terraRenderer.material = materialEstado1;
                 gramaObjeto.SetActive(true);
                 floresObjeto.SetActive(false);
                 break;
 
             case 2:
-                terraRenderer.material = materialEstado1;
-                gramaObjeto.SetActive(false);
-                floresObjeto.SetActive(false);
-                break;
-
-            case 3:
+                // Estado 2: Terra arada (Grama removida)
                 terraRenderer.material = materialEstado2;
                 gramaObjeto.SetActive(false);
                 floresObjeto.SetActive(false);
                 break;
 
-            case 4:
+            case 3:
+                // Estado 3: Sementes plantadas (Material da Terra mudado)
                 terraRenderer.material = materialEstado3;
                 gramaObjeto.SetActive(false);
                 floresObjeto.SetActive(false);
                 break;
-
-            case 5:
+                
+            case 4:
+                // Estado 4: Plantas brotando
                 terraRenderer.material = materialEstado4;
+                gramaObjeto.SetActive(false);
+                floresObjeto.SetActive(false);
+                break;
+
+            case ESTADO_MAXIMO: // Estado 5 - Final
+                // Estado 5: Flores em plena floração
+                terraRenderer.material = materialEstado5;
                 gramaObjeto.SetActive(false);
                 floresObjeto.SetActive(true);
                 break;
         }
     }
-
-    // Propriedade para ser acessada pelo GardenManager
-    public bool IsPhaseComplete => estadoAtual == ESTADO_MAXIMO;
 }

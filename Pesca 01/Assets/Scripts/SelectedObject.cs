@@ -1,9 +1,13 @@
 using UnityEngine;
+using System; // Necessário para a Action
 
 public class SelectedObject : MonoBehaviour
 {
-    // Padrão Singleton: Permite que outros scripts acessem o Manager facilmente.
+    // Padrão Singleton
     public static SelectedObject Instance { get; private set; }
+
+    // Evento C# que será disparado sempre que a ferramenta selecionada mudar.
+    public event Action<Transform> OnToolSelectionChanged;
 
     [Header("Objeto Selecionado")]
     [Tooltip("O Transform do objeto que está atualmente selecionado (a ferramenta).")]
@@ -11,12 +15,10 @@ public class SelectedObject : MonoBehaviour
 
     private void Awake()
     {
-        // Implementação do Singleton
         if (Instance == null)
         {
             Instance = this;
-            // Opcional: Não destruir na troca de cena, dependendo da sua arquitetura
-            // DontDestroyOnLoad(gameObject); 
+            // DontDestroyOnLoad(gameObject); // Deixando comentado para controle manual
         }
         else
         {
@@ -25,16 +27,21 @@ public class SelectedObject : MonoBehaviour
     }
 
     // Define qual objeto está atualmente selecionado.
-    // Este método deve ser chamado pelo script de detecção de clique/outline (OutlineSelection.cs).
     public void SetSelectedTool(Transform tool)
     {
         SelectedTool = tool;
+        
+        // Dispara o evento, notificando todos os ouvintes (incluindo a UI de ToolDisplayUI)
+        OnToolSelectionChanged?.Invoke(SelectedTool);
+        
         if (tool != null)
         {
+            GameProgressManager.Instance?.DisplayMessage($"Ferramenta Selecionada: {tool.name}");
             Debug.Log($"Ferramenta Selecionada Globalmente: {tool.name}");
         }
         else
         {
+            GameProgressManager.Instance?.DisplayMessage("Ferramenta Desselecionada.");
             Debug.Log("Nenhuma ferramenta selecionada.");
         }
     }

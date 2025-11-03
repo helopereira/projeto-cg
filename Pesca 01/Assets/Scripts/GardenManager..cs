@@ -1,45 +1,72 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System.Linq;
+using System;
 
 public class GardenManager : MonoBehaviour
 {
-    // Variável global para checar se todas as terras estão no estado final
-    [Tooltip("Indica se todas as parcelas de terra atingiram o Estado 3 (Final).")]
+    // Padrão Singleton: Permite que outros scripts acessem o Manager facilmente.
+    public static GardenManager Instance { get; private set; }
+
+    [Header("Status da Fase")]
+    [Tooltip("Indica se todas as parcelas de terra atingiram o Estado 5 (Final).")]
     public bool faseCompleta = false;
     
     // Lista para manter o controle de todas as parcelas de terra na cena
     private List<GardenPlot> allGardenPlots = new List<GardenPlot>();
+    
+    private int phasesCompleted = 0; // Usado internamente para rastrear parcelas
 
-    // Registra uma nova parcela de terra
-    public void RegisterPlot(GardenPlot plot)
+    private void Awake()
     {
-        if (!allGardenPlots.Contains(plot))
+        if (Instance == null)
         {
-            allGardenPlots.Add(plot);
+            Instance = this;
+            // Removido DontDestroyOnLoad: Este manager deve ser destruído se a cena do jardim mudar.
+        }
+        else
+        {
+            Destroy(gameObject);
         }
     }
 
-    // Método chamado para verificar se a fase está completa
-    public void CheckPhaseCompletion()
+    private void Start()
     {
-        if (allGardenPlots.Count == 0)
-        {
-            // Não há parcelas de terra para verificar.
-            faseCompleta = false;
-            return;
-        }
-        
-        // Checa se TODAS as parcelas de terra estão no estado final (IsPhaseComplete retorna true)
-        bool allComplete = allGardenPlots.All(plot => plot.IsPhaseComplete);
-        
-        if (allComplete && !faseCompleta)
-        {
-            faseCompleta = true;
-            Debug.Log("🎉 FASE COMPLETA!");
-            // Aqui você pode adicionar lógica de transição de cena, HUD, etc.
-        }
+        // Encontra todas as parcelas de jardim na cena para rastreamento inicial
+        allGardenPlots = FindObjectsByType<GardenPlot>(FindObjectsSortMode.None).ToList();
     }
 
+    private object FindObjectsByType<T>()
+    {
+        throw new NotImplementedException();
+    }
 
+    // --- MÉTODOS DE RASTREAMENTO DE FASE ---
+
+    /// <summary>
+    /// Chamado pelo GardenPlot quando atinge o estado final (Estado 5).
+    /// </summary>
+    public void RegisterPlotCompletion()
+    {
+        // Verifica se todas as parcelas estão completas, recontando o estado atual
+        int currentCompleted = allGardenPlots.Count(plot => plot.IsPhaseComplete);
+        
+        // Se houver uma mudança no número de completas
+        if (currentCompleted != phasesCompleted)
+        {
+            phasesCompleted = currentCompleted;
+            
+            Debug.Log($"Parcela concluída registrada! Total: {phasesCompleted}/{allGardenPlots.Count}");
+
+            // Verifica a conclusão global da FASE DO JARDIM
+            if (phasesCompleted >= allGardenPlots.Count && !faseCompleta)
+            {
+                faseCompleta = true;
+                Debug.Log($"🎉 FASE JARDIM CONCLUÍDA!");
+                
+                // NOTIFICA O GERENCIADOR GLOBAL
+                GameProgressManager.Instance?.RegisterGamePhaseCompleted();
+            }
+        }
+    }
 }
