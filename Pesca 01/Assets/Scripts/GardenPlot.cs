@@ -21,13 +21,13 @@ public class GardenPlot : MonoBehaviour
 
     [Header("Ferramentas Necessárias (Nomes dos Objetos)")]
     [Tooltip("Ferramenta necessária para ir do Estado 1 -> 2 (e.g., Shovel).")]
-    public string ferramentaParaEstado2 = "Shovel";
+    public string ferramentaParaEstado2;
     [Tooltip("Ferramenta necessária para ir do Estado 2 -> 3 (e.g., SeedBag).")]
-    public string ferramentaParaEstado3 = "SeedBag";
+    public string ferramentaParaEstado3;
     [Tooltip("Ferramenta necessária para ir do Estado 3 -> 4 (e.g., WaterCan).")]
-    public string ferramentaParaEstado4 = "WaterCan";
+    public string ferramentaParaEstado4;
     [Tooltip("Ferramenta necessária para ir do Estado 4 -> 5 (e.g., Fertilizer).")]
-    public string ferramentaParaEstado5 = "Fertilizer";
+    public string ferramentaParaEstado5;
 
     // O estado final do jardim
     private const int ESTADO_MAXIMO = 5;
