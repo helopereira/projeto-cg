@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Selectable
   - Outlined
+  - InfoPanel
   layers:
   - Default
   - TransparentFX
