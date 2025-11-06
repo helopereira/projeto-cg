@@ -6923,9 +6923,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 1112955418}
   floresObjeto: {fileID: 252987324}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -26025,9 +26026,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 412221442}
   floresObjeto: {fileID: 1681015292}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -27451,9 +27453,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 733877614}
   floresObjeto: {fileID: 1973613220}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -37720,9 +37723,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 1992718262}
   floresObjeto: {fileID: 2032567222}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -49818,9 +49822,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 1852668978}
   floresObjeto: {fileID: 773327158}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -56391,9 +56396,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 622885414}
   floresObjeto: {fileID: 204110123}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -58867,9 +58873,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 848828740}
   floresObjeto: {fileID: 1007643650}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -59591,9 +59598,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 185028920}
   floresObjeto: {fileID: 182424792}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -73201,9 +73209,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 1132395705}
   floresObjeto: {fileID: 1588029480}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -73866,7 +73875,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &384200993
 Transform:
   m_ObjectHideFlags: 0
@@ -74510,9 +74519,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 1614130437}
   floresObjeto: {fileID: 2121159065}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -76675,9 +76685,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 1159485988}
   floresObjeto: {fileID: 144124712}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -77504,9 +77515,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 1883705820}
   floresObjeto: {fileID: 1837601393}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -89992,9 +90004,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 10653146}
   floresObjeto: {fileID: 1879488308}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -90395,9 +90408,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 1316326627}
   floresObjeto: {fileID: 1439097794}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -94498,9 +94512,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 1776840889}
   floresObjeto: {fileID: 2051617610}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -95876,9 +95891,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 32493475}
   floresObjeto: {fileID: 1916677527}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -99962,9 +99978,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 788570585}
   floresObjeto: {fileID: 617598259}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -103320,9 +103337,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 559895696}
   floresObjeto: {fileID: 505951194}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -107190,9 +107208,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 1647289658}
   floresObjeto: {fileID: 1816515017}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -109930,9 +109949,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 905171297}
   floresObjeto: {fileID: 1571363277}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -109968,9 +109988,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 1854608434}
   floresObjeto: {fileID: 1642313896}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -115428,9 +115449,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 257246101}
   floresObjeto: {fileID: 452807184}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -121999,9 +122021,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 525519501}
   floresObjeto: {fileID: 841522136}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -124165,9 +124188,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 29401444}
   floresObjeto: {fileID: 1073831731}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -128495,9 +128519,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 323433219}
   floresObjeto: {fileID: 1739792348}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -130719,9 +130744,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 1554453143}
   floresObjeto: {fileID: 324173597}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -134407,6 +134433,142 @@ Transform:
   - {fileID: 832836901}
   m_Father: {fileID: 941438073}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &685055766
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 685055767}
+  - component: {fileID: 685055768}
+  - component: {fileID: 685055769}
+  m_Layer: 5
+  m_Name: Tempo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &685055767
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 685055766}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2115362624}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -621, y: 229}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &685055768
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 685055766}
+  m_CullTransparentMesh: 1
+--- !u!114 &685055769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 685055766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: New Text
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!4 &685093441 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8209f9932ab130544962ca8a8725e2cb, type: 3}
@@ -135731,9 +135893,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 491820425}
   floresObjeto: {fileID: 2007026818}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -137072,6 +137235,142 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8209f9932ab130544962ca8a8725e2cb, type: 3}
   m_PrefabInstance: {fileID: 1197851678}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &700871654
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 700871657}
+  - component: {fileID: 700871656}
+  - component: {fileID: 700871655}
+  m_Layer: 5
+  m_Name: Mensagens
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &700871655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 700871654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &700871656
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 700871654}
+  m_CullTransparentMesh: 1
+--- !u!224 &700871657
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 700871654}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2115362624}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.5, y: -288}
+  m_SizeDelta: {x: 1441, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &701019606 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8209f9932ab130544962ca8a8725e2cb, type: 3}
@@ -141887,9 +142186,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 733101137}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0e248c47e22aab4295eb4ead53ad38c, type: 3}
+  m_Script: {fileID: 11500000, guid: 5b759b194d1fca94ca5ac3d34cf101c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeDisplay: {fileID: 685055769}
+  progressDisplay: {fileID: 1691801859}
+  messageDisplay: {fileID: 700871655}
+  messageDisplayDuration: 3
+  totalPhasesCount: 1
 --- !u!1001 &733126662
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -146908,9 +147212,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 1801716111}
   floresObjeto: {fileID: 2125490809}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -154398,9 +154703,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 1076378203}
   floresObjeto: {fileID: 823352495}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -160005,7 +160311,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &827512779
 Transform:
   m_ObjectHideFlags: 0
@@ -178428,9 +178734,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 1999235674}
   floresObjeto: {fileID: 640087710}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -178988,9 +179295,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 613722985}
   floresObjeto: {fileID: 103419932}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -183711,9 +184019,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 141650411}
   floresObjeto: {fileID: 605750426}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -186086,9 +186395,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 1664826314}
   floresObjeto: {fileID: 443300537}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -204412,9 +204722,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 871986821}
   floresObjeto: {fileID: 935025842}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -205024,9 +205335,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 285169776}
   floresObjeto: {fileID: 511022551}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -205440,7 +205752,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1090465962
 Transform:
   m_ObjectHideFlags: 0
@@ -206439,9 +206751,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 1136100255}
   floresObjeto: {fileID: 367655046}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -206599,9 +206912,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 1060819108}
   floresObjeto: {fileID: 197350716}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -210797,9 +211111,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 702108505}
   floresObjeto: {fileID: 1533807312}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -211294,9 +211609,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 402841510}
   floresObjeto: {fileID: 1730640890}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -211702,9 +212018,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 1870998833}
   floresObjeto: {fileID: 1537644166}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -214762,9 +215079,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 1499169609}
   floresObjeto: {fileID: 1557026880}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -221625,9 +221943,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 1230373426}
   floresObjeto: {fileID: 1776165052}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -223546,9 +223865,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 325925173}
   floresObjeto: {fileID: 1798199424}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -231650,9 +231970,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 886302054}
   floresObjeto: {fileID: 26659396}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -235452,9 +235773,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 483163381}
   floresObjeto: {fileID: 1993808813}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -238196,9 +238518,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 1903416085}
   floresObjeto: {fileID: 27396165}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -240885,9 +241208,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 1164675721}
   floresObjeto: {fileID: 2118567402}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -244498,9 +244822,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 64228576}
   floresObjeto: {fileID: 2142404213}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -244833,9 +245158,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 898852340}
   floresObjeto: {fileID: 1150756623}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -249535,9 +249861,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 1248307190}
   floresObjeto: {fileID: 1623574970}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -249779,9 +250106,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 1046826627}
   floresObjeto: {fileID: 1592518110}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -256610,9 +256938,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 2120684820}
   floresObjeto: {fileID: 679923511}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -257102,9 +257431,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 1088075868}
   floresObjeto: {fileID: 1252025477}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -280804,16 +281134,28 @@ PrefabInstance:
       value: Ferramentas
       objectReference: {fileID: 0}
     - target: {fileID: 3338918167033358847, guid: 7585f3115a3fd25459b9f308eab148cb, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 135.87308
+      objectReference: {fileID: 0}
+    - target: {fileID: 3338918167033358847, guid: 7585f3115a3fd25459b9f308eab148cb, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 135.87308
+      objectReference: {fileID: 0}
+    - target: {fileID: 3338918167033358847, guid: 7585f3115a3fd25459b9f308eab148cb, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 135.87308
+      objectReference: {fileID: 0}
+    - target: {fileID: 3338918167033358847, guid: 7585f3115a3fd25459b9f308eab148cb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.2457085
+      value: 3.2434
       objectReference: {fileID: 0}
     - target: {fileID: 3338918167033358847, guid: 7585f3115a3fd25459b9f308eab148cb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.14998856
+      value: -0.15
       objectReference: {fileID: 0}
     - target: {fileID: 3338918167033358847, guid: 7585f3115a3fd25459b9f308eab148cb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 8.262856
+      value: 8.4958
       objectReference: {fileID: 0}
     - target: {fileID: 3338918167033358847, guid: 7585f3115a3fd25459b9f308eab148cb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -285154,9 +285496,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 381103557}
   floresObjeto: {fileID: 832836900}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -289386,9 +289729,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 351657764}
   floresObjeto: {fileID: 380481126}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -292193,9 +292537,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 1197408163}
   floresObjeto: {fileID: 1788507064}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -293458,9 +293803,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 1744363140}
   floresObjeto: {fileID: 1613401729}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -301559,9 +301905,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 1538400909}
   floresObjeto: {fileID: 178450921}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -301597,9 +301944,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 1001783270}
   floresObjeto: {fileID: 58194722}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -302348,9 +302696,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 1358942469}
   floresObjeto: {fileID: 1582934335}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -313805,9 +314154,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 83593961}
   floresObjeto: {fileID: 1034225084}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -319772,9 +320122,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 2117740064}
   floresObjeto: {fileID: 1763131452}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -320214,9 +320565,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 114080639}
   floresObjeto: {fileID: 1752378401}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -321493,9 +321845,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 1355264514}
   floresObjeto: {fileID: 1589829207}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -322169,6 +322522,142 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8dcbb3e67f5d1514e9e129ce26476fd5, type: 3}
   m_PrefabInstance: {fileID: 624436841}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1691801856
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1691801857}
+  - component: {fileID: 1691801858}
+  - component: {fileID: 1691801859}
+  m_Layer: 5
+  m_Name: Fases
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1691801857
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691801856}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2115362624}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -621, y: 291}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1691801858
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691801856}
+  m_CullTransparentMesh: 1
+--- !u!114 &1691801859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691801856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: New Text
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!4 &1692412689 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8dcbb3e67f5d1514e9e129ce26476fd5, type: 3}
@@ -327683,9 +328172,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 2023206703}
   floresObjeto: {fileID: 1719023986}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -336811,9 +337301,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 58584793}
   floresObjeto: {fileID: 1744337475}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -340832,6 +341323,155 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8dcbb3e67f5d1514e9e129ce26476fd5, type: 3}
+--- !u!1 &1779320323
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1779320324}
+  - component: {fileID: 1779320327}
+  - component: {fileID: 1779320326}
+  - component: {fileID: 1779320325}
+  m_Layer: 5
+  m_Name: Ferramentas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1779320324
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779320323}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2115362624}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 620, y: 291}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1779320325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779320323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0c93f8ff89b05545a2dfaecf129c0e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1779320326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779320323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: New Text
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1779320327
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779320323}
+  m_CullTransparentMesh: 1
 --- !u!4 &1779735434 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: db93d312e7cdb4d43b78d5d42a7b4508, type: 3}
@@ -345557,9 +346197,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 1336969517}
   floresObjeto: {fileID: 966815684}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -350595,9 +351236,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 80880554}
   floresObjeto: {fileID: 119509516}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -358068,9 +358710,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 73115991}
   floresObjeto: {fileID: 1145332470}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -358183,9 +358826,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 1993873015}
   floresObjeto: {fileID: 68555959}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -366994,9 +367638,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 1213369554}
   floresObjeto: {fileID: 184935643}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -368472,9 +369117,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 295123746}
   floresObjeto: {fileID: 794694365}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -368510,9 +369156,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 780905683}
   floresObjeto: {fileID: 1262875908}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -370938,9 +371585,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 1115443828}
   floresObjeto: {fileID: 1988004106}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -373141,9 +373789,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 53290071}
   floresObjeto: {fileID: 992156573}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -374085,9 +374734,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 332305839}
   floresObjeto: {fileID: 737230247}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -375524,9 +376174,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 549449298}
   floresObjeto: {fileID: 1649615100}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -376006,9 +376657,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 1234369995}
   floresObjeto: {fileID: 1175435494}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -377805,9 +378457,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 185642288}
   floresObjeto: {fileID: 713480356}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -380792,9 +381445,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 484979795}
   floresObjeto: {fileID: 1866745738}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -385419,9 +386073,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 1328136588}
   floresObjeto: {fileID: 1639209474}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -393339,9 +393994,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 1143237862}
   floresObjeto: {fileID: 687676522}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -406995,6 +407651,111 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8209f9932ab130544962ca8a8725e2cb, type: 3}
+--- !u!1 &2115362623
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2115362624}
+  - component: {fileID: 2115362627}
+  - component: {fileID: 2115362626}
+  - component: {fileID: 2115362625}
+  m_Layer: 5
+  m_Name: Dados
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2115362624
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2115362623}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1691801857}
+  - {fileID: 1779320324}
+  - {fileID: 700871657}
+  - {fileID: 685055767}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
+--- !u!114 &2115362625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2115362623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &2115362626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2115362623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &2115362627
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2115362623}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!4 &2115478164 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8209f9932ab130544962ca8a8725e2cb, type: 3}
@@ -413186,9 +413947,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 1032985563}
   floresObjeto: {fileID: 2007777700}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -413591,9 +414353,10 @@ MonoBehaviour:
   gramaObjeto: {fileID: 307895189}
   floresObjeto: {fileID: 1680551414}
   materialEstado1: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
-  materialEstado2: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
-  materialEstado3: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
-  materialEstado4: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
+  materialEstado2: {fileID: 2100000, guid: 15d9541fabc99eb4f8f8df5005de9165, type: 2}
+  materialEstado3: {fileID: 2100000, guid: 433a049a87d28084c9e81f064ea36313, type: 2}
+  materialEstado4: {fileID: 2100000, guid: 9286f753fa9ab5d459191caa11c528e8, type: 2}
+  materialEstado5: {fileID: 2100000, guid: d44a75c47ba760a478496846f20cfd1d, type: 2}
   ferramentaParaEstado2: Foice
   ferramentaParaEstado3: Enxada
   ferramentaParaEstado4: Balde com Mudas
@@ -413603,6 +414366,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 330585546}
+  - {fileID: 2115362624}
   - {fileID: 1192570119}
   - {fileID: 2131055393}
   - {fileID: 733101139}
