@@ -28,6 +28,8 @@ public class Field : MonoBehaviour
 
   void Start()
   {
+    Cursor.visible = true;
+    Cursor.lockState = CursorLockMode.None;
     // --- GARANTA QUE A CORREÇÃO X/Y ESTÁ APLICADA ---
     // (O seu OnMouseDown() funcionar sugere que esta parte já está correta no seu ficheiro)
     _dimensionY = transform.childCount; 
