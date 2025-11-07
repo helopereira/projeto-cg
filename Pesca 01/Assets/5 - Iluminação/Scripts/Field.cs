@@ -178,6 +178,14 @@ public class Field : MonoBehaviour
                 Debug.Log("🎉 Ganhou!");
                 panel.SetActive(true);
                 field.SetActive(false);
+                if (GameProgressManager.Instance != null)
+                {
+                    GameProgressManager.Instance.RegisterGamePhaseCompleted();
+                }
+                else
+                {
+                    Debug.LogWarning("GameProgressManager.Instance não encontrado. Não foi possível registar a conclusão da fase.");
+                }
             }
         }
     }
