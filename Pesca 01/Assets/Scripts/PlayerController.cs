@@ -63,6 +63,8 @@ void Update()
 
     // --- APLICA O MOVIMENTO FINAL ---
     Vector3 finalVelocity = forward + strafe + vertical;
-    controller.Move(finalVelocity * Time.deltaTime);
+        controller.Move(finalVelocity * Time.deltaTime);
+    
+    
 }
 }

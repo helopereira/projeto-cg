@@ -15,7 +15,7 @@ public class PrimeiraPessoa : MonoBehaviour
     public float angleYmax = 90f;
 
     [Header("Suavização de Movimento")]
-    [Range(0.01f, 1f)]
+    [Range(0.01f, 0.01f)]
     public float smoothCoefx = 0.05f;
     [Range(0.01f, 1f)]
     public float smoothCoefy = 0.05f;
@@ -30,8 +30,9 @@ public class PrimeiraPessoa : MonoBehaviour
 
     void Start()
     {
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.lockState = CursorLockMode.Confined;
     }
 
     void Update()
