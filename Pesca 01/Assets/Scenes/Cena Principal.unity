@@ -146680,7 +146680,7 @@ MonoBehaviour:
   progressDisplay: {fileID: 1691801859}
   messageDisplay: {fileID: 700871655}
   messageDisplayDuration: 3
-  totalPhasesCount: 1
+  totalPhasesCount: 6
 --- !u!114 &733101142
 MonoBehaviour:
   m_ObjectHideFlags: 0
