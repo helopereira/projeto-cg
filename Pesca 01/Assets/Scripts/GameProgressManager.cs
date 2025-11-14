@@ -1,119 +1,134 @@
 using UnityEngine;
-using TMPro; // Necessário para usar TextMeshPro
-using System.Collections;
-using System.Collections.Generic;
+using UnityEngine.SceneManagement; // Necessário para gerir cenas
+using TMPro; // Para o texto da UI
+using System.Collections; // Para Coroutines
 
 public class GameProgressManager : MonoBehaviour
 {
-    // Padrão Singleton
     public static GameProgressManager Instance { get; private set; }
 
-    [Header("Exibição de UI de Progresso")]
-    [Tooltip("Objeto de texto para exibir o tempo decorrido.")]
+    [Header("UI Global")]
     public TextMeshProUGUI timeDisplay;
-    [Tooltip("Objeto de texto para exibir Fases Concluídas / Fases Totais.")]
     public TextMeshProUGUI progressDisplay;
-    
-    [Header("Configuração de Mensagens de Jogo")]
-    [Tooltip("Objeto de texto para exibir mensagens temporárias (Ex: 'Fase Completa', 'Ferramenta Errada').")]
     public TextMeshProUGUI messageDisplay;
-    [Tooltip("Quantidade de segundos que a mensagem temporária deve aparecer.")]
-    public float messageDisplayDuration = 3.0f; 
-    
-    // Variáveis de progresso
-    [Header("Progresso do Jogo")]
-    public int totalPhasesCount = 1; 
-    private int completedPhasesCount = 0;
-    private float gameTime = 0f;
-    private Coroutine messageCoroutine;
 
-    private void Awake()
+    [Header("Gestão de Fases")]
+    [Tooltip("Quantas fases o jogo tem no total")]
+    public int totalPhasesCount = 1;
+    [Tooltip("O tempo, em segundos, que as mensagens de debug aparecem")]
+    public float messageDisplayTime = 3.0f;
+    
+    private float elapsedTime = 0f;
+    private int completedPhasesCount = 0;
+    private string currentAdditiveScene = ""; // ADICIONADO: Rastreia a cena do minigame
+
+    void Awake()
     {
+        // Configuração do Singleton Persistente
         if (Instance == null)
         {
             Instance = this;
-            // Assumimos que este é o Manager principal e deve ser persistente.
-            DontDestroyOnLoad(gameObject); 
+            DontDestroyOnLoad(gameObject);
         }
         else
         {
             Destroy(gameObject);
         }
-        
-        // Inicializa o display
-        if (messageDisplay != null)
-        {
-            messageDisplay.gameObject.SetActive(false);
-        }
-        UpdateProgressUI();
     }
 
-    private void Update()
+    void Update()
     {
-        // Contabilização do tempo
-        gameTime += Time.deltaTime;
-        
+        // Atualiza o tempo global
+        elapsedTime += Time.deltaTime;
         if (timeDisplay != null)
         {
-            // Formato simples (Minutos:Segundos)
-            timeDisplay.text = string.Format("Tempo: {0:00}:{1:00}", Mathf.FloorToInt(gameTime / 60), Mathf.FloorToInt(gameTime % 60));
+            timeDisplay.text = $"Tempo: {Mathf.FloorToInt(elapsedTime / 60):00}:{Mathf.FloorToInt(elapsedTime % 60):00}";
         }
     }
 
-    // --- MÉTODOS PÚBLICOS DE MENSAGEM ---
+    // --- MÉTODOS DE GESTÃO DE CENAS ADITIVAS (NOVO) ---
 
     /// <summary>
-    /// Exibe uma mensagem na tela por um período configurável.
+    /// Chamado por um objeto na cena principal (ex: ChangeSceneOnClick.cs)
     /// </summary>
-    public void DisplayMessage(string message)
+    public void LoadMinigameAdditive(string sceneName)
     {
-        if (messageDisplay == null) return;
-
-        // Se uma mensagem antiga estiver sendo exibida, a para e começa a nova.
-        if (messageCoroutine != null)
+        if (string.IsNullOrEmpty(sceneName))
         {
-            StopCoroutine(messageCoroutine);
+            Debug.LogError("Nome da cena do minigame está vazio!");
+            return;
         }
+
+        currentAdditiveScene = sceneName;
+        // Carrega a cena "por cima" da cena atual
+        SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
         
-        messageCoroutine = StartCoroutine(ShowMessageForDuration(message));
+        // Opcional: Desativar a cena principal (esconder o jardim)
+        // (Requer que todos os objetos do jardim estejam dentro de um objeto pai)
+        // GameObject.Find("Garden_Scene_Root").SetActive(false);
     }
 
-    private IEnumerator ShowMessageForDuration(string message)
-    {
-        messageDisplay.text = message;
-        messageDisplay.gameObject.SetActive(true);
-
-        yield return new WaitForSecondsRealtime(messageDisplayDuration);
-
-        // Desativa a mensagem após o tempo
-        messageDisplay.gameObject.SetActive(false);
-        messageDisplay.text = "";
-    }
-
-    // --- MÉTODOS PÚBLICOS DE PROGRESO ---
-    
     /// <summary>
-    /// Chamado pelo GardenManager quando a fase específica do Jardim é concluída.
+    /// Chamado pelo script do minigame (ex: Field.cs) quando este termina
+    /// </summary>
+    public void ReturnToMainScene()
+    {
+        if (string.IsNullOrEmpty(currentAdditiveScene))
+        {
+            Debug.LogError("Nenhuma cena aditiva para descarregar.");
+            return;
+        }
+
+        // Descarrega a cena do minigame
+        SceneManager.UnloadSceneAsync(currentAdditiveScene);
+        currentAdditiveScene = "";
+
+        // Opcional: Reativar a cena principal
+        // GameObject.Find("Garden_Scene_Root").SetActive(true);
+
+        // Mostra o cursor (se o minigame o escondeu)
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+    }
+
+
+    // --- MÉTODOS DE GESTÃO DE PROGRESSO (Existentes) ---
+
+    /// <summary>
+    /// Chamado pelo Field.cs (ou outros) quando uma fase é ganha
     /// </summary>
     public void RegisterGamePhaseCompleted()
     {
-        completedPhasesCount++;
-        UpdateProgressUI();
-        
-        DisplayMessage("Fase Concluída! Avance para o próximo desafio.");
-
-        if (completedPhasesCount >= totalPhasesCount)
+        if (completedPhasesCount < totalPhasesCount)
         {
-            DisplayMessage("PARABÉNS! Jogo 100% Completo!");
-            // Adicionar lógica de fim de jogo (Time.timeScale = 0f, etc.)
+            completedPhasesCount++;
+            UpdateProgressDisplay();
+            DisplayMessage($"Fase {completedPhasesCount} / {totalPhasesCount} Concluída!");
         }
     }
-    
-    private void UpdateProgressUI()
+
+    void UpdateProgressDisplay()
     {
         if (progressDisplay != null)
         {
-            progressDisplay.text = $"Fases: {completedPhasesCount} / {totalPhasesCount}";
+            progressDisplay.text = $"Progresso: {completedPhasesCount} / {totalPhasesCount}";
         }
+    }
+
+    public void DisplayMessage(string message)
+    {
+        if (messageDisplay != null)
+        {
+            StopCoroutine(ShowMessageCoroutine(message)); // Para a coroutine anterior
+            StartCoroutine(ShowMessageCoroutine(message));
+        }
+    }
+
+    private IEnumerator ShowMessageCoroutine(string message)
+    {
+        messageDisplay.text = message;
+        messageDisplay.gameObject.SetActive(true);
+        yield return new WaitForSeconds(messageDisplayTime);
+        messageDisplay.gameObject.SetActive(false);
     }
 }

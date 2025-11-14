@@ -1,20 +1,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro; // Recomenda-se TextMeshPro para UI
+// using UnityEngine.SceneManagement; // Removido, o GameProgressManager trata disto
 
 public class Field : MonoBehaviour
 {
   // Referência para o texto da UI (Arraste no Inspector)
   [Header("UI (Opcional)")]
-  public TextMeshProUGUI statusText; // Use TextMeshProUGUI (Recomendado)
+  public TextMeshProUGUI statusText; 
   // public UnityEngine.UI.Text statusText; // Use isto se for o UI.Text legado
-  [Header("UI Panels")]
-  public GameObject panel;
-    
-  [Header("Field")]
-    public GameObject field;
+
   private Tile[,] _grid;
   private bool _canDrawConnection = false;
+  private bool _isComplete = false; // Para garantir que "Ganhou" só é chamado uma vez
 
   private List<Tile> _connections = new List<Tile>();
   private Tile _connectionTile;
@@ -28,10 +26,11 @@ public class Field : MonoBehaviour
 
   void Start()
   {
+    // Força o cursor a aparecer nesta cena
     Cursor.visible = true;
     Cursor.lockState = CursorLockMode.None;
-    // --- GARANTA QUE A CORREÇÃO X/Y ESTÁ APLICADA ---
-    // (O seu OnMouseDown() funcionar sugere que esta parte já está correta no seu ficheiro)
+
+    // --- CORREÇÃO DE LÓGICA (X e Y estavam invertidos) ---
     _dimensionY = transform.childCount; 
     if (_dimensionY == 0)
     {
@@ -55,7 +54,7 @@ public class Field : MonoBehaviour
             _grid[x, y] = tile;
         }
     }
-    // --- FIM DA VERIFICAÇÃO ---
+    // --- FIM DA CORREÇÃO ---
 
     SetGameStatus(_solved, _amountToSolve.Count);
     _OutputGrid();
@@ -92,50 +91,32 @@ public class Field : MonoBehaviour
   int _mouseGridX, _mouseGridY;
 
   void Update()
-{
-    // Só desenha conexões se o mouse estiver pressionado e o jogador puder desenhar
-    if (!_canDrawConnection) return;
-
-    // Se o botão do mouse foi solto, parar o arrasto
-    if (!Input.GetMouseButton(0))
-    {
-        _canDrawConnection = false;
-        return;
-    }
-
+  {
+    if (_isComplete || !_canDrawConnection) return;
+    
     if (Camera.main == null) return;
-
-    // --- Conversão correta do mouse para posição local do grid ---
-    Vector3 mouseWorld = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-    Vector3 localPos = transform.InverseTransformPoint(mouseWorld);
-
-    // Cada tile ocupa 1 unidade (ajuste o +0.5f se precisar alinhar visualmente)
-    _mouseGridX = Mathf.FloorToInt(localPos.x + 0.5f);
-    _mouseGridY = Mathf.FloorToInt(localPos.y + 0.5f);
-
-    // Debug opcional: veja se os índices estão corretos
-    // Debug.Log($"MouseLocal: {localPos} -> GridIndex: ({_mouseGridX}, {_mouseGridY})");
-
-    // Impedir acesso fora dos limites da matriz
-    if (_mouseGridX < 0 || _mouseGridX >= _dimensionX ||
-        _mouseGridY < 0 || _mouseGridY >= _dimensionY)
-    {
-        return;
-    }
+            
+    _mouseWorldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+    
+    // CORRIGIDO: Usar Round (Arredondar) é mais preciso
+    _mouseGridX = (int)Mathf.Round(_mouseWorldPosition.x);
+    _mouseGridY = (int)Mathf.Round(_mouseWorldPosition.y);
+    
+    if (_CheckMouseOutsideGrid()) return;
+    
+    if (_grid[_mouseGridX, _mouseGridY] == null) return;
 
     Tile hoverTile = _grid[_mouseGridX, _mouseGridY];
-    if (hoverTile == null) return;
-
+    
     if (_connections == null || _connections.Count == 0)
     {
-        _canDrawConnection = false;
-        return;
+         _canDrawConnection = false; 
+         return;
     }
-
+    
     Tile firstTile = _connections[0];
     bool isDifferentActiveTile = hoverTile.cid > 0 && hoverTile.cid != firstTile.cid;
 
-    // Impede sobrescrever tiles já resolvidos ou errados
     if (hoverTile.isHighlighted || hoverTile.isSolved || isDifferentActiveTile) return;
 
     Vector2 connectionTilePosition = _FindTileCoordinates(_connectionTile);
@@ -143,55 +124,62 @@ public class Field : MonoBehaviour
 
     if (isPositionDifferent)
     {
-        var deltaX = Mathf.Abs(connectionTilePosition.x - _mouseGridX);
-        var deltaY = Mathf.Abs(connectionTilePosition.y - _mouseGridY);
+      var deltaX = System.Math.Abs(connectionTilePosition.x - _mouseGridX);
+      var deltaY = System.Math.Abs(connectionTilePosition.y - _mouseGridY);
+      bool isShiftNotOnNext = deltaX > 1 || deltaY > 1;
+      bool isShiftDiagonal = (deltaX > 0 && deltaY > 0);
+      
+      if (isShiftNotOnNext || isShiftDiagonal) return;
 
-        bool isShiftNotOnNext = deltaX > 1 || deltaY > 1;
-        bool isShiftDiagonal = (deltaX > 0 && deltaY > 0);
+      hoverTile.Highlight();
+      hoverTile.SetConnectionColor(_connectionTile.ConnectionColor);
 
-        if (isShiftNotOnNext || isShiftDiagonal) return;
+      _connectionTile.ConnectionToSide(
+        _mouseGridY > connectionTilePosition.y,
+        _mouseGridX > connectionTilePosition.x,
+        _mouseGridY < connectionTilePosition.y,
+        _mouseGridX < connectionTilePosition.x
+      );
 
-        // --- CHAMA O HIGHLIGHT VISUALMENTE ---
-        hoverTile.Highlight();
-        hoverTile.SetConnectionColor(_connectionTile.ConnectionColor);
+      _connectionTile = hoverTile;
+      _connections.Add(_connectionTile);
 
-        _connectionTile.ConnectionToSide(
-            _mouseGridY > connectionTilePosition.y,
-            _mouseGridX > connectionTilePosition.x,
-            _mouseGridY < connectionTilePosition.y,
-            _mouseGridX < connectionTilePosition.x
-        );
-
-        _connectionTile = hoverTile;
-        _connections.Add(_connectionTile);
-
-        // Verifica se os tiles se conectam corretamente
-        if (_CheckIfTilesMatch(hoverTile, firstTile))
+      if (_CheckIfTilesMatch(hoverTile, firstTile))
+      {
+        _connections.ForEach((tile) => tile.isSolved = true);
+        _canDrawConnection = false;
+        _amountToSolve.Remove(firstTile.cid);
+        SetGameStatus(++_solved, _amountToSolve.Count + _solved);
+        
+        if (_amountToSolve.Keys.Count == 0)
         {
-            _connections.ForEach(tile => tile.isSolved = true);
-            _canDrawConnection = false;
-            _amountToSolve.Remove(firstTile.cid);
-            SetGameStatus(++_solved, _amountToSolve.Count + _solved);
-
-            if (_amountToSolve.Keys.Count == 0)
-            {
-                Debug.Log("🎉 Ganhou!");
-                panel.SetActive(true);
-                field.SetActive(false);
-                if (GameProgressManager.Instance != null)
-                {
-                    GameProgressManager.Instance.RegisterGamePhaseCompleted();
-                }
-                else
-                {
-                    Debug.LogWarning("GameProgressManager.Instance não encontrado. Não foi possível registar a conclusão da fase.");
-                }
-            }
+          CompleteGame();
         }
+      }
     }
-}
+  }
 
+  // ATUALIZADO: Chama o GameProgressManager para voltar
+  void CompleteGame()
+  {
+      if (_isComplete) return; 
+      _isComplete = true;
 
+      Debug.Log("Ganhou! A notificar o GameProgressManager...");
+
+      if (GameProgressManager.Instance != null)
+      {
+          // 1. Regista que a fase foi concluída
+          GameProgressManager.Instance.RegisterGamePhaseCompleted();
+          
+          // 2. Manda o gestor descarregar esta cena (o minigame) e voltar à principal
+          GameProgressManager.Instance.ReturnToMainScene(); 
+      }
+      else
+      {
+          Debug.LogError("GameProgressManager.Instance não encontrado!");
+      }
+  }
 
   bool _CheckIfTilesMatch(Tile tile, Tile another)
   {
@@ -200,22 +188,18 @@ public class Field : MonoBehaviour
 
   bool _CheckMouseOutsideGrid()
   {
-    // Verifica se o índice do rato está dentro dos limites do array
     return _mouseGridY >= _dimensionY || _mouseGridY < 0 || _mouseGridX >= _dimensionX || _mouseGridX < 0;
   }
 
   void onTileSelected(Tile tile)
   {
-    // --- DEBUG ADICIONADO ---
-    Debug.Log($"FIELD: onTileSelected() chamado. isSelected = {tile.isSelected}");
-
     if (tile.isSelected)
     {
       _connectionTile = tile;
       _connections = new List<Tile>();
       _connections.Add(_connectionTile);
       _canDrawConnection = true;
-      _connectionTile.Highlight(); // <-- Esta chamada deve funcionar agora
+      _connectionTile.Highlight();
     }
     else
     {
@@ -224,9 +208,7 @@ public class Field : MonoBehaviour
           _canDrawConnection = false;
           return;
       }
-
       bool isFirstTileInConnection = (_connectionTile == tile);
-
       if (isFirstTileInConnection) 
       {
           tile.HightlightReset();
@@ -242,6 +224,8 @@ public class Field : MonoBehaviour
   public void onRestart()
   {
     Debug.Log("Field -> onRestart");
+    _isComplete = false; 
+    
     for (int y = 0; y < _dimensionY; y++)
     {
       for (int x = 0; x < _dimensionX; x++)
@@ -261,27 +245,6 @@ public class Field : MonoBehaviour
     if (statusText != null)
     {
         statusText.text = "Resolvido: " + solved + " de " + from;
-    }
-    else
-    {
-        GameObject statusTextObj = GameObject.Find("txtStatus");
-        if (statusTextObj != null)
-        {
-            var tmp = statusTextObj.GetComponent<TextMeshProUGUI>();
-            if (tmp != null)
-            {
-                statusText = tmp; 
-                statusText.text = "Resolvido: " + solved + " de " + from;
-            }
-            else
-            {
-                var legacyText = statusTextObj.GetComponent<UnityEngine.UI.Text>();
-                if (legacyText != null)
-                {
-                    legacyText.text = "Resolvido: " + solved + " de " + from;
-                }
-            }
-        }
     }
   }
 
@@ -308,6 +271,7 @@ public class Field : MonoBehaviour
     return position.x != gridX || position.y != gridY;
   }
 
+  // Classe interna não utilizada, mas inofensiva
   private class Connection
   {
     public Tile tile;
@@ -317,7 +281,6 @@ public class Field : MonoBehaviour
       this.tile = tile;
       this.position = position;
     }
-
     public bool IsDifferentPosition(int gridX, int gridY)
     {
       return this.position.x != gridX || this.position.y != gridY;

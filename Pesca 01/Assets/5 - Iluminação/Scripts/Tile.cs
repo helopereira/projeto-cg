@@ -7,7 +7,7 @@ public class Tile : MonoBehaviour
 {
   static public int UNPLAYABLE_INDEX = 0;
   // CORRIGIDO: Alpha (transparência) aumentado de 0.05f (invisível) para 0.5f (50% visível)
-  static public Color COLOR_HIGHTLIGHT = new Color(1, 1, 1, 0.35f); 
+  static public Color COLOR_HIGHTLIGHT = new Color(1, 1, 0, 0.5f); 
   static public string NAME_CONNECTION = "Connection";
   static public string NAME_BACK = "Back";
   static public string NAME_MAK = "Mark"; // Mantendo "MAK" do seu script original
@@ -80,19 +80,16 @@ public class Tile : MonoBehaviour
   {
     _isPlayble = cid > UNPLAYABLE_INDEX;
     
-    // Verificação de nulidade (Boa prática)
     if (BackComponentRenderer != null)
         _originalColor = BackComponentRenderer.color;
     
     if (_isPlayble)
     {
-        // Verificação de nulidade
         if(MarkComponentRenderer != null && ConnectionComponentRenderer != null)
             SetConnectionColor(MarkComponentRenderer.color);
     }
     else
     {
-        // Destrói a marca se cid=0
         if(MarkComponentRenderer != null)
             Destroy(MarkComponentRenderer.gameObject);
     }
@@ -107,21 +104,17 @@ public class Tile : MonoBehaviour
     _isSolved = false;
   }
 
-public void HightlightReset()
-{
+  public void HightlightReset()
+  {
     _isHighlighted = false;
-    var back = BackComponentRenderer;
-    if (back != null)
-        back.color = _originalColor;
-}
+    BackComponentRenderer.color = _originalColor;
+  }
 
-public void Highlight()
-{
+  public void Highlight()
+  {
     _isHighlighted = true;
-    var back = BackComponentRenderer;
-    if (back != null)
-        back.color = new Color(1f, 1f, 1f, 0.35f); // branco translúcido, mantém textura
-}
+    BackComponentRenderer.color = COLOR_HIGHTLIGHT; // Agora usa a cor visível
+  }
 
   public void SetConnectionColor(Color color)
   {
@@ -130,9 +123,6 @@ public void Highlight()
 
   public void ConnectionToSide(bool top, bool rigth, bool bottom, bool left)
   {
-    // --- DEBUG ADICIONADO ---
-    Debug.Log($"TILE ({gameObject.transform.parent.name}, {gameObject.name}): ConnectionToSide() chamado.");
-        
     this.transform.Find(NAME_CONNECTION).gameObject.SetActive(true);
     int angle = rigth ? -90 : bottom ? -180 : left ? -270 : 0;
     
@@ -142,9 +132,6 @@ public void Highlight()
 
   void OnMouseUp()
   {
-    // --- DEBUG ADICIONADO ---
-    Debug.Log($"TILE ({gameObject.transform.parent.name}, {gameObject.name}): OnMouseUp() detetado.");
-        
     if (_isPlayble && !_isSolved)
     {
       _isSelected = false;
@@ -155,10 +142,6 @@ public void Highlight()
   // OnMouseDown (Clique) funciona SE o Tile tiver um Collider 2D
   void OnMouseDown()
   {
-    // --- DEBUG ADICIONADO ---
-    // (Este Debug você confirmou que já funciona)
-    Debug.Log($"TILE ({gameObject.transform.parent.name}, {gameObject.name}): OnMouseDown() detetado. CID={cid}");
-        
     if (_isPlayble && !_isSolved)
     {
       _isSelected = true;

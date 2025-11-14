@@ -1,36 +1,33 @@
 using UnityEngine;
-using UnityEngine.SceneManagement; // Necessário para gerenciar cenas
-
-
+// using UnityEngine.SceneManagement; // Não precisamos mais disto aqui
 
 /// <summary>
-/// Script simples que carrega uma nova cena quando o objeto é clicado.
-/// REQUER que o objeto tenha um Collider (3D) ou Collider2D (2D).
+/// Script simples que chama o GameProgressManager para carregar 
+/// uma cena de minigame ADITIVAMENTE quando o objeto é clicado.
+/// REQUER que o objeto tenha um Collider 3D.
 /// </summary>
-
-
-
 public class ChangeSceneOnClick : MonoBehaviour
 {
-
     [Header("Configuração da Cena")]
-    [Tooltip("O nome EXATO da cena para carregar (deve estar nas Build Settings)")]
+    [Tooltip("O nome EXATO da cena do minigame (deve estar nas Build Settings)")]
     public string sceneName;
-    
 
-    // OnMouseDown é chamado automaticamente pela Unity quando o mouse
-    // clica sobre qualquer Collider (2D ou 3D) neste objeto.
     private void OnMouseDown()
     {
-        // Verifica se o nome da cena foi preenchido no Inspector
-        if (!string.IsNullOrEmpty(sceneName))
+        if (string.IsNullOrEmpty(sceneName))
         {
-            // Carrega a cena
-            SceneManager.LoadScene(sceneName);
+            Debug.LogWarning("O nome da cena (sceneName) não foi definido no Inspector!");
+            return;
+        }
+
+        if (GameProgressManager.Instance != null)
+        {
+            // Chama o gestor global para carregar a cena por cima
+            GameProgressManager.Instance.LoadMinigameAdditive(sceneName);
         }
         else
         {
-            Debug.LogWarning("O nome da cena (sceneName) não foi definido no Inspector deste objeto!");
+            Debug.LogError("GameProgressManager.Instance não encontrado!");
         }
     }
 }
