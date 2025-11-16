@@ -64964,14 +64964,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterBody: {fileID: 330077562}
   characterHead: {fileID: 570088125}
-  crosshair: {fileID: 0}
+  crosshair: {fileID: 1652540482}
   sensitivityX: 1
   sensitivityY: 1
   angleYmin: -90
   angleYmax: 90
-  useSmoothing: 0
-  smoothCoefx: 0.05
-  smoothCoefy: 0.05
   cameraOffset: {x: 0, y: 0.5, z: 0}
 --- !u!114 &330585549
 MonoBehaviour:
@@ -146679,8 +146676,8 @@ MonoBehaviour:
   timeDisplay: {fileID: 685055769}
   progressDisplay: {fileID: 1691801859}
   messageDisplay: {fileID: 700871655}
-  messageDisplayDuration: 3
   totalPhasesCount: 6
+  messageDisplayTime: 3
 --- !u!114 &733101142
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,7 +1,7 @@
 using UnityEngine;
-using UnityEngine.SceneManagement; // Necessário para gerir cenas
-using TMPro; // Para o texto da UI
-using System.Collections; // Para Coroutines
+using UnityEngine.SceneManagement; 
+using TMPro; 
+using System.Collections; 
 
 public class GameProgressManager : MonoBehaviour
 {
@@ -13,18 +13,15 @@ public class GameProgressManager : MonoBehaviour
     public TextMeshProUGUI messageDisplay;
 
     [Header("Gestão de Fases")]
-    [Tooltip("Quantas fases o jogo tem no total")]
     public int totalPhasesCount = 1;
-    [Tooltip("O tempo, em segundos, que as mensagens de debug aparecem")]
     public float messageDisplayTime = 3.0f;
     
     private float elapsedTime = 0f;
     private int completedPhasesCount = 0;
-    private string currentAdditiveScene = ""; // ADICIONADO: Rastreia a cena do minigame
+    private string currentAdditiveScene = "";
 
     void Awake()
     {
-        // Configuração do Singleton Persistente
         if (Instance == null)
         {
             Instance = this;
@@ -38,7 +35,6 @@ public class GameProgressManager : MonoBehaviour
 
     void Update()
     {
-        // Atualiza o tempo global
         elapsedTime += Time.deltaTime;
         if (timeDisplay != null)
         {
@@ -46,10 +42,9 @@ public class GameProgressManager : MonoBehaviour
         }
     }
 
-    // --- MÉTODOS DE GESTÃO DE CENAS ADITIVAS (NOVO) ---
-
     /// <summary>
-    /// Chamado por um objeto na cena principal (ex: ChangeSceneOnClick.cs)
+    /// Desativa o controle FPS e carrega o minigame em modo Aditivo.
+    /// Chamado por ChangeSceneOnClick.
     /// </summary>
     public void LoadMinigameAdditive(string sceneName)
     {
@@ -58,45 +53,54 @@ public class GameProgressManager : MonoBehaviour
             Debug.LogError("Nome da cena do minigame está vazio!");
             return;
         }
+        
+        // 1. DESATIVA o controle FPS e a Câmera FPS (libera o mouse e dá foco à Câmera 2D)
+        SetFpsState(false);
 
         currentAdditiveScene = sceneName;
-        // Carrega a cena "por cima" da cena atual
+        // 2. Carrega a cena do minigame
         SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
-        
-        // Opcional: Desativar a cena principal (esconder o jardim)
-        // (Requer que todos os objetos do jardim estejam dentro de um objeto pai)
-        // GameObject.Find("Garden_Scene_Root").SetActive(false);
     }
 
     /// <summary>
-    /// Chamado pelo script do minigame (ex: Field.cs) quando este termina
+    /// Descarrega o minigame e reativa o controle FPS.
+    /// Chamado pelo script Field.cs ao completar o minigame.
     /// </summary>
     public void ReturnToMainScene()
     {
         if (string.IsNullOrEmpty(currentAdditiveScene))
         {
-            Debug.LogError("Nenhuma cena aditiva para descarregar.");
+            Debug.LogError("Nenhuma cena aditiva para descarregar. Reativando FPS.");
+            SetFpsState(true); 
             return;
         }
 
-        // Descarrega a cena do minigame
+        // 1. Descarrega a cena do minigame
         SceneManager.UnloadSceneAsync(currentAdditiveScene);
         currentAdditiveScene = "";
 
-        // Opcional: Reativar a cena principal
-        // GameObject.Find("Garden_Scene_Root").SetActive(true);
-
-        // Mostra o cursor (se o minigame o escondeu)
-        Cursor.visible = true;
-        Cursor.lockState = CursorLockMode.None;
+        // 2. REATIVA o controle FPS e a Câmera FPS (trava o mouse)
+        SetFpsState(true);
     }
 
-
-    // --- MÉTODOS DE GESTÃO DE PROGRESSO (Existentes) ---
-
     /// <summary>
-    /// Chamado pelo Field.cs (ou outros) quando uma fase é ganha
+    /// Encontra o script PrimeiraPessoa e define seu estado de ativação.
     /// </summary>
+    private void SetFpsState(bool active)
+    {
+        PrimeiraPessoa fpsController = FindObjectOfType<PrimeiraPessoa>(); 
+        
+        if (fpsController != null)
+        {
+            fpsController.SetFpsActive(active);
+        }
+        else
+        {
+            Debug.LogWarning("Script PrimeiraPessoa não encontrado! O controle do mouse não será alterado.");
+        }
+    }
+
+    // ... (Métodos de progresso permanecem inalterados)
     public void RegisterGamePhaseCompleted()
     {
         if (completedPhasesCount < totalPhasesCount)
@@ -119,7 +123,7 @@ public class GameProgressManager : MonoBehaviour
     {
         if (messageDisplay != null)
         {
-            StopCoroutine(ShowMessageCoroutine(message)); // Para a coroutine anterior
+            StopCoroutine(ShowMessageCoroutine(message)); 
             StartCoroutine(ShowMessageCoroutine(message));
         }
     }

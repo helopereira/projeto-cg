@@ -3,51 +3,84 @@ using UnityEngine.UI;
 
 public class PrimeiraPessoa : MonoBehaviour
 {
+    private bool isFpsActive = true; 
+
     [Header("Referências do Personagem")]
-    public Transform characterBody;   // objeto que gira em yaw (horizontal)
-    public Transform characterHead;   // posição onde a câmera ficará (applied in LateUpdate)
+    public Transform characterBody; 
+    public Transform characterHead; 
 
     [Header("Referência da Mira (opcional)")]
     public Image crosshair;
 
     [Header("Sensibilidade")]
-    public float sensitivityX = 800f; // yaw
-    public float sensitivityY = 800f; // pitch
+    public float sensitivityX = 800f; 
+    public float sensitivityY = 800f; 
 
     [Header("Limites de Rotação Vertical")]
     public float angleYmin = -90f;
     public float angleYmax = 90f;
 
-    [Header("Suavização (opcional)")]
-    public bool useSmoothing = false;
-    [Range(0f, 1f)]
-    public float smoothCoefx = 0.3f;
-    [Range(0f, 1f)]
-    public float smoothCoefy = 0.3f;
-
     [Header("Offset da Câmera")]
     public Vector3 cameraOffset = new Vector3(0f, 0.5f, 0f);
 
-    private float rotationX = 0f; // yaw acumulado (gira o corpo)
-    private float rotationY = 0f; // pitch acumulado (gira a câmera)
-    private float smoothRotx = 0f;
-    private float smoothRoty = 0f;
+    private float rotationX = 0f; 
+    private float rotationY = 0f; 
+    private Camera fpsCamera; // Adicionado para referência local da câmera
+
+    void Awake()
+    {
+        fpsCamera = GetComponent<Camera>();
+        if (fpsCamera == null)
+        {
+            Debug.LogError("O script PrimeiraPessoa requer um componente Camera no mesmo GameObject.");
+        }
+    }
 
     void Start()
     {
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
+        SetFpsActive(true); 
 
-        if (crosshair) crosshair.enabled = true;
-
-        // Inicializa rotationX/Y com as rotações atuais para evitar "jump" no começo
         rotationX = (characterBody != null) ? characterBody.eulerAngles.y : transform.eulerAngles.y;
         rotationY = transform.localEulerAngles.x;
-        if (rotationY > 180f) rotationY -= 360f; // normalize to -180..180
+        if (rotationY > 180f) rotationY -= 360f;
+    }
+
+    /// <summary>
+    /// Ativa/desativa o controle FPS, mouse e a própria câmera FPS.
+    /// </summary>
+    // No script PrimeiraPessoa.cs:
+    public void SetFpsActive(bool active)
+    {
+        isFpsActive = active;
+
+        if (fpsCamera != null)
+        {
+            // DESATIVA/ATIVA o componente Camera (para que a câmera 2D possa assumir)
+            fpsCamera.enabled = active; 
+        }
+
+        if (active)
+        {
+            // Modo FPS
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+            
+            if (crosshair) crosshair.enabled = true; // ATIVA A MIRA NO MODO 3D
+        }
+        else
+        {
+            // Modo Minigame
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+            
+            if (crosshair) crosshair.enabled = false; // DESATIVA A MIRA NO MODO 2D
+        }
     }
 
     void Update()
     {
+        if (!isFpsActive) return; 
+
         if (Cursor.lockState != CursorLockMode.Locked)
         {
             if (Input.GetMouseButtonDown(0))
@@ -58,7 +91,7 @@ public class PrimeiraPessoa : MonoBehaviour
             return;
         }
 
-        // 👇 Sensibilidade corrigida (sem deltaTime)
+        // Rotação da Câmera
         float mouseX = Input.GetAxis("Mouse X") * sensitivityX;
         float mouseY = Input.GetAxis("Mouse Y") * sensitivityY;
 
@@ -71,7 +104,6 @@ public class PrimeiraPessoa : MonoBehaviour
 
         transform.localRotation = Quaternion.Euler(rotationY, 0f, 0f);
     }
-
 
     void LateUpdate()
     {
