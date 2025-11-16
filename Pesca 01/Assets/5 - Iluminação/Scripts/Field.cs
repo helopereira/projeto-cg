@@ -21,13 +21,13 @@ public class Field : MonoBehaviour
     private int _lastGridX = -1;
     private int _lastGridY = -1;
 
-    void Awake() // CORREÇÃO: Inicialização movida para Awake()
+    void Awake() // Inicialização movida para Awake()
     {
         Time.timeScale = 1.0f;
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
 
-        // Limpeza: Desativa o AudioListener duplicado
+        // Limpeza: Desativa o AudioListener duplicado (se houver)
         var listeners = FindObjectsOfType<AudioListener>();
         if (listeners.Length > 1)
         {
@@ -66,7 +66,7 @@ public class Field : MonoBehaviour
 
     void Start() 
     {
-        // Vazio ou com lógica que roda após o Awake()
+        // Opcional
     }
 
     private Vector3 _mouseWorldPosition;
@@ -74,10 +74,9 @@ public class Field : MonoBehaviour
 
     void Update()
     {
-        // Verifica se o botão do mouse está CONTINUAMENTE pressionado
+        // Garante que o arrasto só ocorre se há uma conexão ativa e o botão está pressionado
         if (_isComplete || _connections.Count == 0 || !Input.GetMouseButton(0)) return; 
         
-        // CORREÇÃO IMPORANTE: Usa Camera.main
         if (Camera.main == null) return;
         
         _mouseWorldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -91,15 +90,17 @@ public class Field : MonoBehaviour
         Tile hoverTile = _grid[_mouseGridX, _mouseGridY];
         Tile firstTile = _connections[0];
 
+        // Se o mouse está no mesmo tile que o anterior, não faz nada
         if (_mouseGridX == _lastGridX && _mouseGridY == _lastGridY) return;
 
         bool isDifferentActiveTile = hoverTile.cid > 0 && hoverTile.cid != firstTile.cid;
 
+        // Se o tile já está destacado/resolvido OU é de outra cor, para
         if (hoverTile.isHighlighted || hoverTile.isSolved || isDifferentActiveTile) return;
 
         Vector2 connectionTilePosition = _FindTileCoordinates(_connectionTile);
         
-        // Lógica de Adjacência
+        // Lógica de Adjacência (impede saltos e diagonais)
         var deltaX = System.Math.Abs(connectionTilePosition.x - _mouseGridX);
         var deltaY = System.Math.Abs(connectionTilePosition.y - _mouseGridY);
         bool isShiftNotOnNext = deltaX > 1 || deltaY > 1;
@@ -107,7 +108,7 @@ public class Field : MonoBehaviour
         
         if (isShiftNotOnNext || isShiftDiagonal) return;
 
-        // Se chegamos aqui, o movimento é válido e adjacente
+        // Movimento válido: Desenha a conexão
         hoverTile.Highlight();
         hoverTile.SetConnectionColor(_connectionTile.ConnectionColor);
 
@@ -131,14 +132,21 @@ public class Field : MonoBehaviour
             _amountToSolve.Remove(firstTile.cid);
             SetGameStatus(++_solved, _amountToSolve.Count + _solved);
             
+            // CORREÇÃO: Limpa a lista de conexões para interromper o arrasto imediatamente
+            _connections.Clear(); 
+
             if (_amountToSolve.Keys.Count == 0)
             {
                 CompleteGame();
             }
+            
+            // Interrompe o Update neste frame para garantir que nada mais seja desenhado
+            return; 
         }
     }
 
-    // --- MÉTODOS AUXILIARES (AGORA 'private' ou 'public') ---
+    // --- MÉTODOS AUXILIARES ---
+
     private void _CollectAmountToSolveFromTile(Tile tile)
     {
         if (tile.cid > Tile.UNPLAYABLE_INDEX)
@@ -151,7 +159,7 @@ public class Field : MonoBehaviour
 
     private void _OutputGrid()
     {
-        // ... (Implementação)
+        // Implementação da saída da grade (para Debug)
     }
 
     private bool _CheckIfTilesMatch(Tile tile, Tile another)
@@ -180,6 +188,9 @@ public class Field : MonoBehaviour
             tile.ResetConnection();
             tile.HightlightReset();
         });
+        
+        // NOVO: Limpa a lista de conexões ao resetar
+        _connections.Clear(); 
     }
     
     public void onRestart()
@@ -226,6 +237,12 @@ public class Field : MonoBehaviour
     {
         if (tile.isSelected) // OnMouseDown
         {
+            // Se já houver conexões pendentes, reseta
+            if (_connections.Count > 0)
+            {
+                _ResetConnections();
+            }
+            
             _connectionTile = tile;
             _connections = new List<Tile>();
             _connections.Add(_connectionTile);
@@ -237,9 +254,15 @@ public class Field : MonoBehaviour
         }
         else // OnMouseUp
         {
+            // Garante que, se o mouse for solto e o par não estiver completo, o desenho é apagado
             if (_connections.Count > 0 && !_CheckIfTilesMatch(_connections[0], _connectionTile))
             {
                 _ResetConnections();
+            }
+            else
+            {
+                // Se soltou e o par foi completado com sucesso, apenas limpa as posições
+                _connections.Clear();
             }
             _lastGridX = -1;
             _lastGridY = -1;
