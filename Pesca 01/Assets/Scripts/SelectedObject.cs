@@ -1,16 +1,13 @@
 using UnityEngine;
-using System; // Necessário para a Action
+using System;
 
 public class SelectedObject : MonoBehaviour
 {
-    // Padrão Singleton
     public static SelectedObject Instance { get; private set; }
 
-    // Evento C# que será disparado sempre que a ferramenta selecionada mudar.
     public event Action<Transform> OnToolSelectionChanged;
 
     [Header("Objeto Selecionado")]
-    [Tooltip("O Transform do objeto que está atualmente selecionado (a ferramenta).")]
     public Transform SelectedTool { get; private set; }
 
     private void Awake()
@@ -18,7 +15,6 @@ public class SelectedObject : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            // DontDestroyOnLoad(gameObject); // Deixando comentado para controle manual
         }
         else
         {
@@ -26,27 +22,34 @@ public class SelectedObject : MonoBehaviour
         }
     }
 
-    // Define qual objeto está atualmente selecionado.
-    public void SetSelectedTool(Transform tool)
+    public void SetSelectedTool(Transform newTool)
     {
-        SelectedTool = tool;
+        // --- CORREÇÃO AQUI ---
+        // Se já existia uma ferramenta na mão E ela é diferente da nova...
+        if (SelectedTool != null && SelectedTool != newTool)
+        {
+            // ...nós "soltamos" a ferramenta antiga (trazemos ela de volta pro jogo)
+            // Isso impede que a tábua fique invisível para sempre se você trocar de item.
+            SelectedTool.gameObject.SetActive(true);
+        }
+        // ---------------------
+
+        SelectedTool = newTool;
         
-        // Dispara o evento, notificando todos os ouvintes (incluindo a UI de ToolDisplayUI)
         OnToolSelectionChanged?.Invoke(SelectedTool);
         
-        if (tool != null)
+        if (newTool != null)
         {
-            GameProgressManager.Instance?.DisplayMessage($"Ferramenta Selecionada: {tool.name}");
-            Debug.Log($"Ferramenta Selecionada Globalmente: {tool.name}");
+            Debug.Log($"Ferramenta Selecionada: {newTool.name}");
+            GameProgressManager.Instance?.DisplayMessage($"Item: {newTool.name}");
         }
         else
         {
-            GameProgressManager.Instance?.DisplayMessage("Ferramenta Desselecionada.");
-            Debug.Log("Nenhuma ferramenta selecionada.");
+            Debug.Log("Mão vazia.");
+            GameProgressManager.Instance?.DisplayMessage("");
         }
     }
     
-    // Método auxiliar para checar a ferramenta por nome
     public bool IsToolSelected(string toolName)
     {
         return SelectedTool != null && SelectedTool.name.Contains(toolName);

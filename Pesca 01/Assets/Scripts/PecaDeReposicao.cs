@@ -1,52 +1,53 @@
 using UnityEngine;
 
+[RequireComponent(typeof(InventoryItem))]
 public class PecaDeReposicao : MonoBehaviour
 {
-    // Apenas um ID para identificar qual peça é
+    [Header("Identificação")]
     public string ID = "Peca_1"; 
 
-    // O GameObject vazio que marca o lugar certo (o Socket)
-    // Arraste o seu GameObject "Socket_..." para esta variável no Inspector
+    [Header("Configuração")]
+    [Tooltip("O GameObject transparente/fantasma onde esta peça deve ser encaixada.")]
     public GameObject Destino; 
 
-    // Referência ao script do Player para saber se ele tem algo na mão
-    // Arraste o GameObject do Player para esta variável
-    public PlayerInventory InventarioDoPlayer; 
-
-    private Collider meuCollider;
-
-    void Start()
+    private void Start()
     {
-        meuCollider = GetComponent<Collider>();
-        // Garante que o Destino (Socket) esteja invisível e sem interação no início
+        // Garante que o destino comece escondido
+        if (Destino != null) Destino.SetActive(false);
+    }
+
+    // Essa função roda automaticamente quando o objeto reaparece na cena (quando você troca de item)
+    private void OnEnable()
+    {
+        // Se a tábua caiu no chão (reapareceu), escondemos o fantasma no banco
+        // para não confundir o jogador.
         if (Destino != null)
         {
-            Destino.SetActive(false); 
+            Destino.SetActive(false);
         }
     }
 
-    // Chamado quando o jogador CLICA na tábua
     void OnMouseDown()
     {
-        // 1. Verifica se o player já está segurando alguma peça
-        if (InventarioDoPlayer.PecaNaMao == null)
+        if (SelectedObject.Instance == null) return;
+
+        // --- MUDANÇA PRINCIPAL AQUI ---
+        // Removemos o 'if (SelectedTool == null)'
+        // Agora, se você clicar na tábua, você pega ela, não importa o que tem na mão.
+        // O SelectedObject.Instance.SetSelectedTool já cuida de soltar o item anterior.
+
+        // 1. Define esta tábua como a ferramenta atual
+        SelectedObject.Instance.SetSelectedTool(this.transform);
+        
+        // 2. Esconde a tábua da cena (vai para o inventário)
+        gameObject.SetActive(false); 
+
+        // 3. Mostra o fantasma no banco para saber onde encaixar
+        if (Destino != null)
         {
-            // Pega a peça!
-            InventarioDoPlayer.PecaNaMao = this;
-            
-            // Faz a tábua sumir do mapa
-            gameObject.SetActive(false); 
-            
-            // Ativa o destino para que o jogador possa clicar nele
-            if (Destino != null)
-            {
-                Destino.SetActive(true);
-            }
-            Debug.Log("Peca " + ID + " coletada.");
+            Destino.SetActive(true);
         }
-        else
-        {
-            Debug.Log("Já estou segurando a peca: " + InventarioDoPlayer.PecaNaMao.ID);
-        }
+
+        Debug.Log($"Peça {ID} coletada.");
     }
 }
