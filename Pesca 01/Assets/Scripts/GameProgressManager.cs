@@ -15,6 +15,10 @@ public class GameProgressManager : MonoBehaviour
     [Header("Gestão de Fases")]
     public int totalPhasesCount = 1;
     public float messageDisplayTime = 3.0f;
+
+    [Header("Configuração de Áudio")] 
+    public AudioClip somDeVitoria;    
+    private AudioSource meuAudioSource; 
     
     private float elapsedTime = 0f;
     private int completedPhasesCount = 0;
@@ -31,6 +35,7 @@ public class GameProgressManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        meuAudioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -107,6 +112,10 @@ public class GameProgressManager : MonoBehaviour
         {
             completedPhasesCount++;
             UpdateProgressDisplay();
+            if (meuAudioSource != null && somDeVitoria != null)
+            {
+                meuAudioSource.PlayOneShot(somDeVitoria);
+            }
             DisplayMessage($"Fase {completedPhasesCount} / {totalPhasesCount} Concluída!");
         }
     }

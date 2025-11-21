@@ -2,15 +2,33 @@ using UnityEngine;
 
 public class Lixeira : MonoBehaviour
 {
-    public TiposDeLixo tipoAceito;
+    [Header("Configuração da Lixeira")]
+    public TiposDeLixo tipoAceito; 
     public int lixosNecessarios = 2; 
     
-    public int lixosJogados = 0; // Agora conta pontos, não apenas objetos
+    [Header("Estado Atual")]
+    public int lixosJogados = 0;
     public bool lixeiraConcluida = false;
+
+    // Referência para o sistema de animação
+    private Animator meuAnimator;
+
+    void Start()
+    {
+        // Tenta achar o Animator automaticamente no objeto
+        meuAnimator = GetComponent<Animator>();
+    }
 
     void OnMouseDown()
     {
         if (SelectedObject.Instance == null) return;
+        
+        // Se a lixeira já fechou, não aceita mais nada
+        if (lixeiraConcluida) 
+        {
+            GameProgressManager.Instance?.DisplayMessage("Esta lixeira já está cheia!");
+            return;
+        }
 
         Transform itemNaMao = SelectedObject.Instance.SelectedTool;
 
@@ -22,6 +40,7 @@ public class Lixeira : MonoBehaviour
             {
                 if (lixoScript.tipoDesteLixo == tipoAceito)
                 {
+                    // Manda reciclar
                     ReciclarItem(itemNaMao.gameObject, lixoScript.quantidadeQueVale);
                 }
                 else
@@ -32,21 +51,25 @@ public class Lixeira : MonoBehaviour
         }
     }
 
-    // Recebe quantos pontos o item vale
     void ReciclarItem(GameObject lixoObjeto, int valor)
     {
         Destroy(lixoObjeto);
         SelectedObject.Instance.SetSelectedTool(null);
 
-        // Soma o valor do objeto (ex: se for o monte de latas, soma logo 2 ou 3)
         lixosJogados += valor;
-        
         Debug.Log($"{tipoAceito}: {lixosJogados}/{lixosNecessarios}");
 
+        // VERIFICA SE ENCHEU
         if (lixosJogados >= lixosNecessarios && !lixeiraConcluida)
         {
             lixeiraConcluida = true;
-            Debug.Log($"Lixeira de {tipoAceito} finalizada!");
+            Debug.Log($"Lixeira de {tipoAceito} cheia! Fechando tampa...");
+
+            // --- ATIVA A ANIMAÇÃO DE FECHAR ---
+            if (meuAnimator != null)
+            {
+                meuAnimator.SetTrigger("Fechar");
+            }
         }
 
         ReciclagemManager.Instance.VerificarVitoria();
