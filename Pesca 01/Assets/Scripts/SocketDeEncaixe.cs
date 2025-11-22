@@ -3,73 +3,66 @@ using UnityEngine;
 public class SocketDeEncaixe : MonoBehaviour
 {
     [Header("Configuração")]
-    [Tooltip("O ID deve ser idêntico ao da PecaDeReposicao correspondente.")]
-    public string ID_Esperado = "Peca_1"; 
+    public string ID_Esperado = "Peca_1";
     
-    [Tooltip("Opcional se você usar o Singleton no Manager. Pode deixar vazio.")]
-    public ReconstrucaoManager GerenciadorDoJogo;
+    // Não precisamos mais da variável "PecaFinalConsertada"!
+    // O script vai usar a própria peça que está na sua mão.
 
-    // Chamado quando o jogador CLICA no local de encaixe (o fantasma transparente)
+    private bool jaFoiEncaixado = false;
+
     void OnMouseDown()
     {
-        // Verifica se o sistema de seleção existe
+        if (jaFoiEncaixado) return;
         if (SelectedObject.Instance == null) return;
 
-        // 1. Verifica o que o jogador tem na mão (SelectedTool)
         Transform ferramentaNaMao = SelectedObject.Instance.SelectedTool;
 
         if (ferramentaNaMao != null)
         {
-            // 2. Tenta pegar o script 'PecaDeReposicao' do objeto que está na mão
             PecaDeReposicao pecaScript = ferramentaNaMao.GetComponent<PecaDeReposicao>();
 
-            // 3. Verifica se é uma peça válida E se o ID bate com o esperado
             if (pecaScript != null && pecaScript.ID == ID_Esperado)
             {
-                // ** LÓGICA DE ENCAIXE CORRETO **
-                RealizarEncaixe(ferramentaNaMao);
+                // Passamos o objeto que está na mão para ser fixado
+                FixarPecaNoBanco(ferramentaNaMao.gameObject);
             }
             else
             {
-                // Feedback de erro
-                Debug.Log($"Peça errada. Esperava: {ID_Esperado}, mas está segurando: {(pecaScript ? pecaScript.ID : ferramentaNaMao.name)}");
-                
-                // Se quiser mostrar na tela:
-                GameProgressManager.Instance?.DisplayMessage("Essa peça não encaixa aqui!");
+                GameProgressManager.Instance?.DisplayMessage("Peça errada!");
             }
-        }
-        else
-        {
-            Debug.Log("Não estou segurando nenhuma peça!");
-            GameProgressManager.Instance?.DisplayMessage("Você precisa pegar a peça primeiro.");
         }
     }
 
-    void RealizarEncaixe(Transform pecaReal)
+    void FixarPecaNoBanco(GameObject peca)
     {
-        // Traz a peça para a posição exata deste socket
-        pecaReal.position = transform.position;
-        pecaReal.rotation = transform.rotation;
+        jaFoiEncaixado = true;
 
-        // Faz a peça reaparecer no mundo (ela estava setActive(false) quando foi pega)
-        pecaReal.gameObject.SetActive(true);
-        
-        // Limpa o inventário do jogador e remove o ícone da UI
+        // 1. Tira a peça do sistema de seleção (Inventário fica vazio)
         SelectedObject.Instance.SetSelectedTool(null);
 
-        // Avisa o Gerenciador (Usa o Singleton se tiver, ou a variável arrastada)
-        if (ReconstrucaoManager.Instance != null)
-        {
-            ReconstrucaoManager.Instance.ContarEncaixe();
-        }
-        else if (GerenciadorDoJogo != null)
-        {
-            GerenciadorDoJogo.ContarEncaixe();
-        }
+        // 2. Teleporta a peça para o lugar e rotação exatos do socket
+        peca.transform.position = transform.position;
+        peca.transform.rotation = transform.rotation;
 
-        // Desativa este socket (o fantasma some, pois a peça real agora ocupa o lugar)
+        // 3. Reativa a peça (ela estava escondida/na mão)
+        peca.SetActive(true);
+
+        // 4. "Blinda" a peça: Remove os componentes para ela virar um objeto comum
+        // Assim você não consegue clicar nela de novo.
+        Destroy(peca.GetComponent<PecaDeReposicao>()); // Remove o script de pegar
+        Destroy(peca.GetComponent<InventoryItem>());   // Remove o ícone
+        Destroy(peca.GetComponent<BoxCollider>());     // Remove o colisor (opcional, mas bom)
+        
+        // Se quiser manter colisão física (pro personagem não atravessar), 
+        // tire apenas a linha do Destroy(BoxCollider).
+
+        // 5. Avisa o gerente
+        if (ReconstrucaoManager.Instance != null)
+            ReconstrucaoManager.Instance.ContarEncaixe();
+
+        // 6. Some com o socket transparente
         gameObject.SetActive(false);
 
-        Debug.Log($"Peça {ID_Esperado} encaixada com sucesso!");
+        Debug.Log("Peça movida e fixada com sucesso!");
     }
 }
