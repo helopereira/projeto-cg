@@ -1,41 +1,34 @@
 using UnityEngine;
 using System.Collections;
-using System; // Para o atributo Obsolete
+using System; 
 
 public class LixoComportamento : MonoBehaviour
 {
-    // Posições e Configurações
     public Vector3 posicaoEscondida; 
     public Vector3 posicaoVisivel; 
     
     public float tempoDeAnimacao = 0.2f; 
     public float tempoVisivel = 1.5f;
     
-    // Referências
     private PescaManager pescaManager;
     private Collider lixoCollider;
     private bool estaVisivel = false;
     private Coroutine cicloCoroutine;
     
-    // --- FUNÇÕES DE INICIALIZAÇÃO ---
-
     void Awake()
     {
         lixoCollider = GetComponent<Collider>();
         if (lixoCollider == null)
         {
-            Debug.LogError("O Prefab do Lixo deve ter um Collider 3D!");
             enabled = false;
             return;
         }
         
-        // Configurações iniciais
         transform.localPosition = posicaoEscondida;
         lixoCollider.enabled = false;
         gameObject.SetActive(false);
     }
 
-    // Usando FindObjectOfType que é a forma atual, e removendo o atributo Obsolete
     void Start()
     {
         pescaManager = FindObjectOfType<PescaManager>();
@@ -44,8 +37,6 @@ public class LixoComportamento : MonoBehaviour
             Debug.LogError("PescaManager não encontrado na cena! A contagem de lixo não funcionará.");
         }
     }
-    
-    // --- LÓGICA DE ATIVAÇÃO E CICLO ---
 
     public void AtivarLixo()
     {
@@ -63,7 +54,6 @@ public class LixoComportamento : MonoBehaviour
         
         yield return new WaitForSeconds(tempoVisivel);
         
-        // 3. Desce (se não foi clicado)
         if (estaVisivel) 
         {
             yield return StartCoroutine(MoverLixo(posicaoEscondida));
@@ -71,7 +61,6 @@ public class LixoComportamento : MonoBehaviour
         }
         
     }
-
     IEnumerator MoverLixo(Vector3 alvo)
     {
         float t = 0;
@@ -85,15 +74,11 @@ public class LixoComportamento : MonoBehaviour
         }
         transform.localPosition = alvo;
         
-        // ⭐️ CHAMA DESATIVAR APENAS SE ESTIVER DESCENDO
         if (alvo == posicaoEscondida)
         {
             DesativarLixo(); 
         }
     }
-
-    // --- LÓGICA DE INTERAÇÃO ---
-    
     void OnMouseDown()
     {
         if (estaVisivel)
@@ -111,13 +96,10 @@ public class LixoComportamento : MonoBehaviour
     void DesativarLixo()
 {
     
-    
     if (lixoCollider != null) 
         {
             lixoCollider.enabled = false;
         }
-        
-        // Usa o Log para rastrear
         Debug.Log($"Lixo {gameObject.name} destruído.");
         Destroy(gameObject);
 }

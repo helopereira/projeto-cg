@@ -24,15 +24,12 @@ public class SelectedObject : MonoBehaviour
 
     public void SetSelectedTool(Transform newTool)
     {
-        // --- CORREÇÃO AQUI ---
-        // Se já existia uma ferramenta na mão E ela é diferente da nova...
+
         if (SelectedTool != null && SelectedTool != newTool)
         {
-            // ...nós "soltamos" a ferramenta antiga (trazemos ela de volta pro jogo)
-            // Isso impede que a tábua fique invisível para sempre se você trocar de item.
+
             SelectedTool.gameObject.SetActive(true);
         }
-        // ---------------------
 
         SelectedTool = newTool;
         

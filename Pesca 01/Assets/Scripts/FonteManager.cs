@@ -9,9 +9,8 @@ public class FonteManager : MonoBehaviour
     public Renderer[] partesDaAgua; 
 
     [Header("Texturas (Imagens)")]
-    public Texture texturaSuja;  // Arraste a IMAGEM da água marrom aqui
-    public Texture texturaLimpa; // Arraste a IMAGEM da água azul aqui
-
+    public Texture texturaSuja; 
+    public Texture texturaLimpa;
     [Header("Efeitos e Progresso")]
     public ParticleSystem bolhasParticulas;
     public int canosTotais = 5;
@@ -46,7 +45,6 @@ public class FonteManager : MonoBehaviour
     {
         if (grupoAgua != null) grupoAgua.SetActive(true);
 
-        // Troca para a imagem SUJA
         TrocarTextura(texturaSuja);
 
         fonteProntaParaLimpar = true;
@@ -57,7 +55,6 @@ public class FonteManager : MonoBehaviour
     {
         if (bolhasParticulas != null) bolhasParticulas.Play();
 
-        // Troca para a imagem LIMPA
         TrocarTextura(texturaLimpa);
 
         Debug.Log("Fonte Restaurada!");
@@ -71,11 +68,9 @@ public class FonteManager : MonoBehaviour
         {
             foreach (Renderer r in partesDaAgua)
             {
-                // Tenta mudar a textura principal
-                // Se você estiver usando URP (Universal Render Pipeline), a propriedade padrão costuma funcionar
+
                 r.material.mainTexture = novaTextura;
-                
-                // LINHA EXTRA DE SEGURANÇA PARA URP (Caso a de cima não funcione):
+
                 r.material.SetTexture("_BaseMap", novaTextura); 
             }
         }

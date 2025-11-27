@@ -1,15 +1,7 @@
 using UnityEngine;
-// using UnityEngine.SceneManagement; // Não precisamos mais disto aqui
-
-/// <summary>
-/// Script simples que chama o GameProgressManager para carregar 
-/// uma cena de minigame ADITIVAMENTE quando o objeto é clicado.
-/// REQUER que o objeto tenha um Collider 3D.
-/// </summary>
 public class ChangeSceneOnClick : MonoBehaviour
 {
     [Header("Configuração da Cena")]
-    [Tooltip("O nome EXATO da cena do minigame (deve estar nas Build Settings)")]
     public string sceneName;
 
     private void OnMouseDown()
@@ -22,7 +14,6 @@ public class ChangeSceneOnClick : MonoBehaviour
 
         if (GameProgressManager.Instance != null)
         {
-            // Chama o gestor global para carregar a cena por cima
             GameProgressManager.Instance.LoadMinigameAdditive(sceneName);
         }
         else

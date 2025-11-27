@@ -13,10 +13,11 @@ public class PescaManager : MonoBehaviour, ICompletable
     private bool minigameCompleto = false;
 
     [Header("Troca de Cenário")]
-    [Tooltip("Arraste o objeto que representa o estado Sujo.")]
-    public GameObject cenarioSujo; 
-    [Tooltip("Arraste o objeto que representa o estado Limpo.")]
+    public GameObject cenarioSujo;
     public GameObject cenarioLimpo;
+    
+    [Header("Efeito de Transição")]
+public ParticleSystem transicaoParticulasSystem; 
 
     void Start()
     {
@@ -54,9 +55,6 @@ public class PescaManager : MonoBehaviour, ICompletable
         Debug.Log("SpawnRoutine encerrada. Fim do Minigame de Pesca.");
     }
 
-// EM PescaManager.cs
-
-// EM PescaManager.cs
 
 public void RegistrarLixoRemovido()
 {
@@ -67,32 +65,70 @@ public void RegistrarLixoRemovido()
     if (lixosRemovidos >= totalLixosParaRemover)
     {
         minigameCompleto = true;
-        
-        // ⭐️ CORREÇÃO: Destruir lixos remanescentes para garantir a limpeza do cenário
-        LixoComportamento[] lixosRestantes = FindObjectsByType<LixoComportamento>(FindObjectsSortMode.None);
+                LixoComportamento[] lixosRestantes = FindObjectsByType<LixoComportamento>(FindObjectsSortMode.None);
         foreach (var lixo in lixosRestantes) 
         { 
-            // Usa-se Destroy para garantir que nenhuma Coroutine continue rodando
             Destroy(lixo.gameObject); 
         }
         
         TrocarCenarioParaLimpo(); 
-        
-        Debug.Log("🎉 FASE PESCA CONCLUÍDA!");
         GameProgressManager.Instance?.RegisterGamePhaseCompleted();
     }
 }
     
-    private void TrocarCenarioParaLimpo()
+
+private void TrocarCenarioParaLimpo()
+{
+    StartCoroutine(IniciarTransicaoComFX());
+}
+
+IEnumerator IniciarTransicaoComFX()
+{
+    
+    if (transicaoParticulasSystem != null)
     {
-        if (cenarioSujo != null)
-        {
-            cenarioSujo.SetActive(false);
-        }
-        
-        if (cenarioLimpo != null)
-        {
-            cenarioLimpo.SetActive(true);
-        }
+        // Garante que o objeto pai está ativo
+        transicaoParticulasSystem.gameObject.SetActive(true); 
+        transicaoParticulasSystem.Play();
+        Debug.Log("2. FX DISPARADO. Aguardando 0.1s para a visualização.");
     }
+    else
+    {
+        Debug.LogError("ERRO: O componente ParticleSystem não está atribuído no Inspector!");
+    }
+    yield return new WaitForSeconds(0.1f); 
+    if (cenarioSujo != null)
+    {
+        cenarioSujo.SetActive(false);
+        Debug.Log("3. Cenário Sujo Desativado.");
+    }
+    
+    if (cenarioLimpo != null)
+    {
+        cenarioLimpo.SetActive(true);
+        Debug.Log("4. Cenário Limpo Ativado.");
+    }
+    if (transicaoParticulasSystem != null)
+    {
+        float fxDuration = transicaoParticulasSystem.main.duration;
+        Debug.Log($"5. Aguardando {fxDuration:F2} segundos para o FX terminar.");
+        yield return new WaitForSeconds(fxDuration); 
+        
+        transicaoParticulasSystem.gameObject.SetActive(false);
+        Debug.Log("6. FX Desativado.");
+    }
+    
+    Debug.Log("--- 7. FIM DA TRANSIÇÃO ---");
+}
+IEnumerator DesativarFXAposDuracao()
+{
+    if (transicaoParticulasSystem != null)
+    {
+        yield return new WaitForSeconds(transicaoParticulasSystem.main.duration); 
+        
+        transicaoParticulasSystem.gameObject.SetActive(false);
+    }
+}
+
+
 }

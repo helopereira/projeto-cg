@@ -20,8 +20,6 @@ public class ReciclagemManager : MonoBehaviour
         if (jogoFinalizado) return;
 
         int lixeirasProntas = 0;
-
-        // Passa por todas as lixeiras da lista
         foreach (Lixeira lixeira in lixeirasDoCenario)
         {
             if (lixeira.lixeiraConcluida)
@@ -30,7 +28,6 @@ public class ReciclagemManager : MonoBehaviour
             }
         }
 
-        // Se todas as lixeiras (ex: 4) estiverem prontas
         if (lixeirasProntas >= lixeirasDoCenario.Count)
         {
             FinalizarMinigame();
@@ -40,12 +37,11 @@ public class ReciclagemManager : MonoBehaviour
     void FinalizarMinigame()
     {
         jogoFinalizado = true;
-        Debug.Log("PARABÉNS! Toda a reciclagem foi feita.");
         
         string msg = "Área Limpa! Reciclagem Concluída.";
         GameProgressManager.Instance?.DisplayMessage(msg);
         
-        // Registra no seu gerenciador de progresso global
+
         GameProgressManager.Instance?.RegisterGamePhaseCompleted();
     }
 }

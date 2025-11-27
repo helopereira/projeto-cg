@@ -25,7 +25,7 @@ public class PrimeiraPessoa : MonoBehaviour
 
     private float rotationX = 0f; 
     private float rotationY = 0f; 
-    private Camera fpsCamera; // Adicionado para referência local da câmera
+    private Camera fpsCamera; 
 
     void Awake()
     {
@@ -45,17 +45,13 @@ public class PrimeiraPessoa : MonoBehaviour
         if (rotationY > 180f) rotationY -= 360f;
     }
 
-    /// <summary>
-    /// Ativa/desativa o controle FPS, mouse e a própria câmera FPS.
-    /// </summary>
-    // No script PrimeiraPessoa.cs:
+
     public void SetFpsActive(bool active)
     {
         isFpsActive = active;
 
         if (fpsCamera != null)
         {
-            // DESATIVA/ATIVA o componente Camera (para que a câmera 2D possa assumir)
             fpsCamera.enabled = active; 
         }
 
@@ -65,15 +61,14 @@ public class PrimeiraPessoa : MonoBehaviour
             Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Locked;
             
-            if (crosshair) crosshair.enabled = true; // ATIVA A MIRA NO MODO 3D
+            if (crosshair) crosshair.enabled = true; 
         }
         else
         {
-            // Modo Minigame
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
             
-            if (crosshair) crosshair.enabled = false; // DESATIVA A MIRA NO MODO 2D
+            if (crosshair) crosshair.enabled = false;
         }
     }
 
@@ -81,17 +76,6 @@ public class PrimeiraPessoa : MonoBehaviour
     {
         if (!isFpsActive) return; 
 
-        if (Cursor.lockState != CursorLockMode.Locked)
-        {
-            if (Input.GetMouseButtonDown(0))
-            {
-                Cursor.lockState = CursorLockMode.Locked;
-                Cursor.visible = false;
-            }
-            return;
-        }
-
-        // Rotação da Câmera
         float mouseX = Input.GetAxis("Mouse X") * sensitivityX;
         float mouseY = Input.GetAxis("Mouse Y") * sensitivityY;
 
